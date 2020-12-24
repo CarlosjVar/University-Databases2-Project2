@@ -18,9 +18,11 @@ docker cp maprexample.jar hadoopserver:/home/hadoopuser
 docker cp datadates.csv  hadoopserver:/home/hadoopuser
 ```
 
+Everytime you rerun the preexisting hadoopserver container you must run the `./start.sh` command.
+
 ### ssh related
 The image includes a default user setup, the user "hadoopuser" must grant passwordless access by ssh, this is required for the hadoop server
-
+This is run once per container.
 ```
 su - hadoopuser
 cd /home/hadoopuser
