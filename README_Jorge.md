@@ -40,8 +40,12 @@ These are example of instructions to prepare hdfs folders and run a map reduce e
 ```
 hadoop fs -mkdir /data
 hadoop fs -mkdir /data/input
+hadoop fs -copyFromLocal datadates.csv /data/input
 hadoop fs -copyFromLocal datasales.dat /data/input
-hadoop jar maprexample.jar main.program /data/input/datadates.csv /data/output
+cd mapr
+hadoop jar maprexampl.jar main.program /data/input/datadates.csv /data/output
+hadoop fs -cat /data/output
+
 ```
 
 ### hive related
