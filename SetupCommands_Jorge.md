@@ -2,6 +2,9 @@
 This readme helps you to perform the intended labs in classroom regarding topics such as mapreduce with hadoop, hive, spark and kafka.
 
 ### docker related  
+
+Everytime you rerun the preexisting hadoopserver container you must run the `./start.sh` command.
+
 Build the image, create an internal network and run the image using a local volumen
 path to share files and jars from the host computer
 ```
@@ -17,8 +20,6 @@ This is an example of how to manually copy files from the host to the container
 docker cp maprexample.jar hadoopserver:/home/hadoopuser
 docker cp datadates.csv  hadoopserver:/home/hadoopuser
 ```
-
-Everytime you rerun the preexisting hadoopserver container you must run the `./start.sh` command.
 
 ### ssh related
 The image includes a default user setup, the user "hadoopuser" must grant passwordless access by ssh, this is required for the hadoop server
