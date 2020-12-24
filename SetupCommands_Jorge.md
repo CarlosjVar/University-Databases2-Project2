@@ -1,4 +1,4 @@
-## Repository for course: database II
+## Setting up the workspace
 This readme helps you to perform the intended labs in classroom regarding topics such as mapreduce with hadoop, hive, spark and kafka.
 
 ### docker related  
@@ -12,7 +12,7 @@ docker build . -t hadoop
 
 docker network create --driver bridge --subnet 10.0.0.0/28 littlenet
 
-docker run -it -p 9000:9000 -p 9092:9092 -p 22:22 -v C:\Applications\GitHub\University-Databases2-Project2\dataLoading:/home/hadoopuser/mapr --name hadoopserver --net littlenet --ip 10.0.0.2 hadoop
+docker run -it -p 9000:9000 -p 9092:9092 -p 22:22 -v C:\Applications\GitHub\University-Databases2-Project2\hadoop\dataLoading:/home/hadoopuser/mapr --name hadoopserver --net littlenet --ip 10.0.0.2 hadoop
 ```
 
 This is an example of how to manually copy files from the host to the container 
@@ -38,16 +38,90 @@ These are the commands to start/stop the hadoop single node cluster
 start-all.sh
 stop-all.sh
 ```
+Setting up hdfs
+```
+hadoop fs -mkdir /data
+hadoop fs -mkdir /data/input
+cd mapr
+cd DataSources
+hadoop fs -copyFromLocal European_Rosters.csv /data/input
+hadoop fs -copyFromLocal Player_Attributes.csv /data/input
+hadoop fs -copyFromLocal Player.csv /data/input
+```
 
 ### hive related
-To setup the hive environment just run the `hive-setup.sh` script located in hadoopuser home folder
+To setup the hive environment just run the `./hive-setup.sh` command.
 Then access the hive console with `hive`
+
+Create the schema and tables if they do not already exist.
 ```
+CREATE SCHEMA IF NOT EXISTS player_price_tracking;
+
+USE player_price_tracking;
+
+CREATE TABLE IF NOT EXISTS player_infoloader(
+    id                 INT,
+    player_api_id      INT,
+    player_name        STRING,
+    player_fifa_api_id INT,
+    birthday           TIMESTAMP,
+    height             DECIMAL(5,2),
+    weight             DECIMAL(5,2)
+) row format delimited fields terminated by ',';
+
+CREATE TABLE IF NOT EXISTS playerstats_infoloader(
+    id                  INT,
+    player_fifa_api_id  INT,
+    player_api_id       INT,
+    dateRecorded        TIMESTAMP,
+    overall_rating      INT,
+    potential           INT,           
+    preferred_foot      STRING,      
+    attacking_work_rate STRING, 
+    defensive_work_rate STRING,
+    crossing            INT,
+    finishing           INT,
+    heading_accuracy    INT,
+    short_passing       INT,
+    volleys             INT,
+    dribbling           INT,
+    curve               INT,
+    free_kick_accuracy  INT,
+    long_passing        INT,
+    ball_control        INT,
+    acceleration        INT,
+    sprint_speed        INT,
+    agility             INT,
+    reactions           INT,
+    balance             INT,
+    shot_power          INT,
+    jumping             INT,
+    stamina             INT,
+    strength            INT,
+    long_shots          INT,
+    aggression          INT,
+    interceptions       INT,
+    positioning         INT,
+    vision              INT,
+    penalties           INT,
+    marking             INT,
+    standing_tackle     INT,
+    sliding_tackle      INT,
+    gk_diving           INT,
+    gk_handling         INT,
+    gk_kicking          INT,
+    gk_positioning      INT,
+    gk_reflexes         INT
+) row format delimited fields terminated by ',';
+
+CREATE TABLE IF NOT EXISTS marketvalues_infoloader(
+    //TODO insert the fields.
+) row format delimited fields terminated by ',';
 
 ```
 
 ### Kakfa related
-To start the kafkta server just the script `start-kafka.sh` located in the hadoopuser home folder.
+To start the kafka server just run the command `./start-kafka.sh`.
 
 To test your Kafka environment follow the [kafka quickstart guide](https://kafka.apache.org/quickstart) 
 
