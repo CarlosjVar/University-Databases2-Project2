@@ -49,6 +49,11 @@ hadoop fs -copyFromLocal Player_Attributes.csv /data/input
 hadoop fs -copyFromLocal Player.csv /data/input
 ```
 
+Running hadoop
+```
+hadoop jar maprexample.jar main.program /data/input/European_Rosters.csv /data/output
+```
+
 ### hive related
 To setup the hive environment just run the `./hive-setup.sh` command.
 Then access the hive console with `hive`

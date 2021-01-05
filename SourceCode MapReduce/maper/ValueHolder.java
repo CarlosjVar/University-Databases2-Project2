@@ -54,11 +54,11 @@ public class ValueHolder implements Writable {
 
     @Override
     public String toString() {
-        return "league='" + league + '\'' +
-                ", citizenship='" + citizenship + '\'' +
-                ", nacionality='" + nationality + '\'' +
-                ", highestMarketValueDate='" + highestMarketValueDate + '\'' +
-                ", marketValue=" + marketValue +
-                ", HighestMarketValue=" + HighestMarketValue ;
+        return  league +
+                "," + citizenship +
+                "," + nationality + 
+                "," + marketValue +
+                "," + HighestMarketValue +
+                "," + highestMarketValueDate ;
     }
 }
