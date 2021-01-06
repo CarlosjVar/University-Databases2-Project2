@@ -51,7 +51,7 @@ hadoop fs -copyFromLocal Player.csv /data/input
 
 Running hadoop
 ```
-hadoop jar maprexample.jar main.program /data/input/European_Rosters.csv /data/output
+hadoop jar MapReduceV1.jar main.program /data/input/European_Rosters.csv /data/output
 ```
 
 ### hive related
@@ -120,8 +120,38 @@ CREATE TABLE IF NOT EXISTS playerstats_infoloader(
 ) row format delimited fields terminated by ',';
 
 CREATE TABLE IF NOT EXISTS marketvalues_infoloader(
-    //TODO insert the fields.
+    player_name            STRING,
+    player_league          STRING,
+    player_citizenship     STRING,
+    player_nationality     STRING,
+    marketValue            INT,
+    highestMarketValue     INT,
+    highestMarketValueDate STRING           
 ) row format delimited fields terminated by ',';
+
+CREATE TABLE IF NOT EXISTS playerstats(
+       //TODO meterle los campos.
+)
+COMMENT 'Players personal info including stats from 2006 to 2016.'
+ROW FORMAT DELIMITED
+FIELDS TERMINATED BY ','
+LINES TERMINATED BY '\n'
+STORED AS TEXTFILE;
+
+CREATE TABLE IF NOT EXISTS marketvalues(
+    player_name            STRING,
+    player_league          STRING,
+    player_citizenship     STRING,
+    player_nationality     STRING,
+    marketValue            INT,
+    highestMarketValue     INT,
+    highestMarketValueDate TIMESTAMP           
+)
+COMMENT 'Market values info per player.'
+ROW FORMAT DELIMITED
+FIELDS TERMINATED BY ','
+LINES TERMINATED BY '\n'
+STORED AS TEXTFILE;
 
 ```
 

@@ -16,7 +16,8 @@ Loading data into hive. Inside hive's console.
 ```
 load data inpath '/data/input/Player.csv' into table player_infoloader;
 load data inpath '/data/input/Player_Attributes.csv' into table playerstats_infoloader;
-load data inpath '' into table marketvalues_infoloader; //TODO: insert mapr's output file path.
+load data inpath '/data/output/part-r-00000' into table marketvalues_infoloader; //TODO: insert mapr's output file path.
+
 
 CREATE TABLE IF NOT EXISTS sales ( fecha timestamp, monto decimal(10,2))
 COMMENT 'Ventas por mes por anyo'
