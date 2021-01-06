@@ -156,7 +156,7 @@ STORED AS TEXTFILE;
 ```
 Date parsing into final table
 ```
-insert into table marketvalues select player_name,player_league,player_citizenship , player_nationality, marketValue, monto ,from_unixtime(unix_timestamp(highestMarketValueDate, 'MM/dd/yyyy')) from marketvalues_infoloader,;
+insert into table marketvalues select player_name,player_league,player_citizenship , player_nationality, marketValue, highestMarketValue ,from_unixtime(unix_timestamp(highestMarketValueDate, 'MM/dd/yyyy')) from marketvalues_infoloader;
 
 ```
 ### Kakfa related
