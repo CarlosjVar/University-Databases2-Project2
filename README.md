@@ -4,7 +4,7 @@ Readme that contains the inteded commands in order to setup and load the data in
 ## Setting up the enviroment.
 Commands regarding the setup of the working enviroment.
 
-### docker related  
+### docker
 
 Build the image, create an internal network and run the image using a local volume
 path to share files and jars from the host computer
@@ -25,7 +25,7 @@ docker cp datadates.csv  hadoopserver:/home/hadoopuser
 
 ```
 
-### ssh related
+### ssh
 
 The image includes a default user setup, the user "hadoopuser" must grant passwordless access by ssh, this is required for the hadoop server
 This is run once per container.
@@ -39,7 +39,7 @@ exit
 
 ```
 
-### hadoop related
+### hadoop
 
 Start the hadoop single node cluster with `start-all.sh`. To stop it, run `start-all.sh`.
 
@@ -58,7 +58,7 @@ cd ..
 
 ```
 
-### hive related
+### hive
 To setup the hive environment just run the `./hive-setup.sh` command.
 Then access the hive console with `hive`
 
@@ -127,6 +127,7 @@ CREATE TABLE IF NOT EXISTS playerstats_infoloader(
 CREATE TABLE IF NOT EXISTS marketvalues_infoloader(
     player_name            STRING,
     player_league          STRING,
+    player_team            STRING,
     player_citizenship     STRING,
     player_nationality     STRING,
     marketValue            INT,
@@ -134,18 +135,11 @@ CREATE TABLE IF NOT EXISTS marketvalues_infoloader(
     highestMarketValueDate STRING           
 ) row format delimited fields terminated by ',';
 
-CREATE TABLE IF NOT EXISTS playerstats(
-       //TODO meterle los campos.
-)
-COMMENT 'Players personal info including stats from 2006 to 2016.'
-ROW FORMAT DELIMITED
-FIELDS TERMINATED BY ','
-LINES TERMINATED BY '\n'
-STORED AS TEXTFILE;
 
 CREATE TABLE IF NOT EXISTS marketvalues(
     player_name            STRING,
     player_league          STRING,
+    player_team            STRING,
     player_citizenship     STRING,
     player_nationality     STRING,
     marketValue            INT,
@@ -158,16 +152,29 @@ FIELDS TERMINATED BY ','
 LINES TERMINATED BY '\n'
 STORED AS TEXTFILE;
 
-CREATE TABLE IF NOT EXISTS playerstats(
+CREATE TABLE IF NOT EXISTS player(
+    player_api_id          INT,
     player_name            STRING,
+    birthday               TIMESTAMP,
     player_league          STRING,
     player_citizenship     STRING,
     player_nationality     STRING,
     marketValue            INT,
     highestMarketValue     INT,
-    highestMarketValueDate TIMESTAMP           
+    highestMarketValueDate TIMESTAMP          
 )
-COMMENT 'Market values info per player.'
+COMMENT 'Players personal info including market value data.'
+ROW FORMAT DELIMITED
+FIELDS TERMINATED BY ','
+LINES TERMINATED BY '\n'
+STORED AS TEXTFILE;
+
+CREATE TABLE IF NOT EXISTS playerstats(
+    player_api_id       INT,
+    dateRecorded        TIMESTAMP,
+    overall_rating      INT
+)
+COMMENT 'Players fifa overall ratings from 2006 to 2016.'
 ROW FORMAT DELIMITED
 FIELDS TERMINATED BY ','
 LINES TERMINATED BY '\n'
@@ -175,11 +182,16 @@ STORED AS TEXTFILE;
 
 ```
 
-### Kakfa related
+### kakfa
 To start the kafka server just run the command `./start-kafka.sh`.
 
 To test your Kafka environment follow the [kafka quickstart guide](https://kafka.apache.org/quickstart) 
 
+## Restarting container
+
+Everytime you rerun the preexisting hadoopserver container you must run the `./start.sh` command.
+
+Additionaly, remember to run `start-all.sh` to start the hadoop service.
 
 ## Data Loading
 It assumes the single-node hadoop server container is all setup and started running.
@@ -198,8 +210,11 @@ hadoop jar MapReduceV1.jar main.program /data/input/European_Rosters.csv /data/o
 ### hive
 
 Loading data from csv files into hive. Inside hive's console. It assumes the hive enviroment has been well created as told above in the setting up the enviroment section.
-The map reduce has to be run for the last command to work.
+
+The map reduce has to be already runned for the last command to work.
+
 The data from the three csv files is inserted into temporal tables.
+
 ```
 
 load data inpath '/data/input/Player.csv' into table player_infoloader;
@@ -229,8 +244,3 @@ Insert the player data to its final table, filtering all the unnecesary columns 
 
 ```
 
-## Restarting container
-
-Everytime you rerun the preexisting hadoopserver container you must run the `./start.sh` command.
-
-Additionaly, remember to run `start-all.sh` to start the hadoop service.
