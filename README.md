@@ -132,7 +132,8 @@ CREATE TABLE IF NOT EXISTS marketvalues_infoloader(
     player_nationality     STRING,
     marketValue            INT,
     highestMarketValue     INT,
-    highestMarketValueDate STRING           
+    highestMarketValueDate STRING,
+    player_team            STRING       
 ) row format delimited fields terminated by ',';
 
 
@@ -144,7 +145,8 @@ CREATE TABLE IF NOT EXISTS marketvalues(
     player_nationality     STRING,
     marketValue            INT,
     highestMarketValue     INT,
-    highestMarketValueDate TIMESTAMP           
+    highestMarketValueDate TIMESTAMP,
+    player_team            STRING   
 )
 COMMENT 'Market values info per player.'
 ROW FORMAT DELIMITED
@@ -226,7 +228,7 @@ load data inpath '/data/output/part-r-00000' into table marketvalues_infoloader;
 Insert the market values data to its final table, parsing the date to a Timestamp in the process (it was provided as a string).
 ```
 
-insert into table marketvalues select player_name,player_league,player_citizenship , player_nationality, marketValue, highestMarketValue ,from_unixtime(unix_timestamp(highestMarketValueDate, 'MM/dd/yyyy')) from marketvalues_infoloader;
+insert into table marketvalues select player_name,player_league,player_citizenship , player_nationality, marketValue, highestMarketValue ,from_unixtime(unix_timestamp(highestMarketValueDate, 'MM/dd/yyyy')),player_team  from marketvalues_infoloader;
 
 ```
 
