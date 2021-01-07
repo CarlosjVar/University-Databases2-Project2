@@ -16,12 +16,6 @@ docker network create --driver bridge --subnet 10.0.0.0/28 littlenet
 docker run -it -p 9000:9000 -p 9092:9092 -p 22:22 -v [local repository path]\hadoop\dataLoading:/home/hadoopuser/mapr --name hadoopserver --net littlenet --ip 10.0.0.2 hadoop
 ```
 
-This is an example of how to manually copy files from the host to the container 
-```
-docker cp maprexample.jar hadoopserver:/home/hadoopuser
-docker cp datadates.csv  hadoopserver:/home/hadoopuser
-```
-
 ### ssh
 
 The image includes a default user setup, the user "hadoopuser" must grant passwordless access by ssh, this is required for the hadoop server
@@ -33,10 +27,11 @@ ssh-keygen -t rsa -P '' -f /home/hadoopuser/.ssh/id_rsa
 ssh-copy-id hadoopuser@localhost
 exit
 ```
+A password is solicited while you're setting this part up. This password is `hadoop`.
 
 ### hadoop
 
-Start the hadoop single node cluster with `start-all.sh`. To stop it, run `start-all.sh`.
+Start the hadoop single node cluster with `start-all.sh`. To stop it, run `stop-all.sh`.
 
 Setting up hdfs (hadoop file system).
 ```
@@ -65,7 +60,7 @@ CREATE SCHEMA IF NOT EXISTS player_price_tracking;
 USE player_price_tracking;
 ```
 
-Temporal table to load the players personal information directly from the .csv file.
+Create a temporal table to load the players personal information directly from the Player.csv file.
 ```
 CREATE TABLE IF NOT EXISTS player_infoloader(
     id                 INT,
@@ -80,7 +75,7 @@ ROW FORMAT DELIMITED
 FIELDS TERMINATED BY ',';
 ```
 
-Temporal table to load the players stats data directly from the .csv file.
+Create a temporal table to load the players stats data directly from the Player_Attributes.csv file.
 ```
 CREATE TABLE IF NOT EXISTS playerstats_infoloader(
     id                  INT,
@@ -130,7 +125,7 @@ ROW FORMAT DELIMITED
 FIELDS TERMINATED BY ',';
 ```
 
-Temporal table to load the players market values data directly from the .csv file.
+Create a temporal table to load the players market values data directly from the European_Rosters.csv file.
 ```
 CREATE TABLE IF NOT EXISTS marketvalues_infoloader(
     player_name            STRING,
@@ -146,7 +141,7 @@ ROW FORMAT DELIMITED
 FIELDS TERMINATED BY ',';
 ```
 
-Market values final table. Set to load the data from the temporal table `marketvalues_infoloader` so we can parse the `highestMarketValueDate` field to a TIMESTAMP.
+Create the market values final table. Set to load the data from the temporal table `marketvalues_infoloader` so we can parse the `highestMarketValueDate` field to a TIMESTAMP.
 ```
 CREATE TABLE IF NOT EXISTS marketvalues(
     player_name            STRING,
@@ -165,7 +160,7 @@ LINES TERMINATED BY '\n'
 STORED AS TEXTFILE;
 ```
 
-Players personal information final table. Set to load the data from the personal table `player_infoloader` filtering the unwanted fields.
+Create the players personal information final table. Set to load the data from the personal table `player_infoloader` filtering the unwanted fields.
 ```
 CREATE TABLE IF NOT EXISTS player(
     player_api_id          INT,
@@ -179,7 +174,7 @@ LINES TERMINATED BY '\n'
 STORED AS TEXTFILE;
 ```
 
-Players stats data final table. Set to load the data from the personal table `playerstats_infoloader` filtering the unwanted fields.
+Create the players stats data final table. Set to load the data from the personal table `playerstats_infoloader` filtering the unwanted fields.
 ```
 CREATE TABLE IF NOT EXISTS playerstats(
     player_api_id       INT,
