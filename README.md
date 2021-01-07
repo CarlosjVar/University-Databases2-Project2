@@ -132,8 +132,7 @@ CREATE TABLE IF NOT EXISTS marketvalues_infoloader(
     player_nationality     STRING,
     marketValue            INT,
     highestMarketValue     INT,
-    highestMarketValueDate STRING,
-    player_team            STRING       
+    highestMarketValueDate STRING           
 ) row format delimited fields terminated by ',';
 
 
@@ -145,8 +144,7 @@ CREATE TABLE IF NOT EXISTS marketvalues(
     player_nationality     STRING,
     marketValue            INT,
     highestMarketValue     INT,
-    highestMarketValueDate TIMESTAMP,
-    player_team            STRING   
+    highestMarketValueDate TIMESTAMP           
 )
 COMMENT 'Market values info per player.'
 ROW FORMAT DELIMITED
@@ -211,7 +209,7 @@ hadoop jar MapReduceV1.jar main.program /data/input/European_Rosters.csv /data/o
 
 ### hive
 
-Loading data from csv files into hive. Inside hive's console. It assumes the hive enviroment has been well created as told above in the setting up the enviroment section.
+Loading data from csv files into hive. Inside hive's console. It assumes the hive enviroment has been well created as told above in the Setting up the enviroment section.
 
 The map reduce has to be already runned for the last command to work.
 
@@ -228,7 +226,7 @@ load data inpath '/data/output/part-r-00000' into table marketvalues_infoloader;
 Insert the market values data to its final table, parsing the date to a Timestamp in the process (it was provided as a string).
 ```
 
-insert into table marketvalues select player_name,player_league,player_citizenship , player_nationality, marketValue, highestMarketValue ,from_unixtime(unix_timestamp(highestMarketValueDate, 'MM/dd/yyyy')),player_team  from marketvalues_infoloader;
+insert into table marketvalues select player_name,player_league,player_citizenship , player_nationality, marketValue, highestMarketValue ,from_unixtime(unix_timestamp(highestMarketValueDate, 'MM/dd/yyyy')) from marketvalues_infoloader;
 
 ```
 
