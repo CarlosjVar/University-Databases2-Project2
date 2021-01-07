@@ -127,24 +127,24 @@ CREATE TABLE IF NOT EXISTS playerstats_infoloader(
 CREATE TABLE IF NOT EXISTS marketvalues_infoloader(
     player_name            STRING,
     player_league          STRING,
-    player_team            STRING,
     player_citizenship     STRING,
     player_nationality     STRING,
     marketValue            INT,
     highestMarketValue     INT,
-    highestMarketValueDate STRING           
+    highestMarketValueDate STRING,
+    player_team            STRING         
 ) row format delimited fields terminated by ',';
 
 
 CREATE TABLE IF NOT EXISTS marketvalues(
     player_name            STRING,
     player_league          STRING,
-    player_team            STRING,
     player_citizenship     STRING,
     player_nationality     STRING,
     marketValue            INT,
     highestMarketValue     INT,
-    highestMarketValueDate TIMESTAMP           
+    highestMarketValueDate TIMESTAMP,
+    player_team            STRING         
 )
 COMMENT 'Market values info per player.'
 ROW FORMAT DELIMITED
@@ -161,7 +161,8 @@ CREATE TABLE IF NOT EXISTS player(
     player_nationality     STRING,
     marketValue            INT,
     highestMarketValue     INT,
-    highestMarketValueDate TIMESTAMP          
+    highestMarketValueDate TIMESTAMP,
+    player_team            STRING       
 )
 COMMENT 'Players personal info including market value data.'
 ROW FORMAT DELIMITED
