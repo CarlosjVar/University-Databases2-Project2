@@ -14,14 +14,16 @@ public class ValueHolder implements Writable {
     public String highestMarketValueDate;
     public Integer marketValue;
     public Integer HighestMarketValue;
+    public String team;
 
-    public ValueHolder(String league, String citizenship, String nationality, String highestMarketValueDate, Integer marketValue, Integer highestMarketValue) {
+    public ValueHolder(String league, String citizenship, String nationality, String highestMarketValueDate, Integer marketValue, Integer highestMarketValue,String team) {
         this.league = league;
         this.citizenship = citizenship;
         this.nationality = nationality;
         this.highestMarketValueDate = highestMarketValueDate;
         this.marketValue = marketValue;
         this.HighestMarketValue = highestMarketValue;
+        this.team= team;
     }
     public ValueHolder() {
         this.league = "";
@@ -30,6 +32,7 @@ public class ValueHolder implements Writable {
         this.highestMarketValueDate = "";
         this.marketValue = 0;
         this.HighestMarketValue = 0;
+        this.team = "";
     }
 
     @Override
@@ -40,6 +43,7 @@ public class ValueHolder implements Writable {
         dataOutput.writeUTF(this.highestMarketValueDate);
         dataOutput.writeInt(this.marketValue);
         dataOutput.writeInt(this.HighestMarketValue);
+        dataOutput.writeUTF(this.team);
     }
 
     @Override
@@ -50,15 +54,17 @@ public class ValueHolder implements Writable {
         this.highestMarketValueDate = dataInput.readUTF();
         this.marketValue = dataInput.readInt();
         this.HighestMarketValue = dataInput.readInt();
+        this.team = dataInput.readUTF();
     }
 
     @Override
     public String toString() {
-        return  league +
+        return ","+ league +
                 "," + citizenship +
-                "," + nationality + 
+                "," + nationality +
                 "," + marketValue +
                 "," + HighestMarketValue +
-                "," + highestMarketValueDate ;
+                "," + highestMarketValueDate +
+                "," + team;
     }
 }
