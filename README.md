@@ -1,10 +1,10 @@
-## Data Bases II second project repository.
+# Data Bases II second project repository.
 Readme that contains the inteded commands in order to setup and load the data into the second project of the course Data Bases II.
 
-### Setting up the enviroment.
+## Setting up the enviroment.
 Commands regarding the setup of the working enviroment.
 
-#### docker related  
+### docker related  
 
 Build the image, create an internal network and run the image using a local volume
 path to share files and jars from the host computer
@@ -25,7 +25,7 @@ docker cp datadates.csv  hadoopserver:/home/hadoopuser
 
 ```
 
-#### ssh related
+### ssh related
 
 The image includes a default user setup, the user "hadoopuser" must grant passwordless access by ssh, this is required for the hadoop server
 This is run once per container.
@@ -39,7 +39,7 @@ exit
 
 ```
 
-#### hadoop related
+### hadoop related
 
 Start the hadoop single node cluster with `start-all.sh`. To stop it, run `start-all.sh`.
 
@@ -58,7 +58,7 @@ cd ..
 
 ```
 
-#### hive related
+### hive related
 To setup the hive environment just run the `./hive-setup.sh` command.
 Then access the hive console with `hive`
 
@@ -175,16 +175,16 @@ STORED AS TEXTFILE;
 
 ```
 
-#### Kakfa related
+### Kakfa related
 To start the kafka server just run the command `./start-kafka.sh`.
 
 To test your Kafka environment follow the [kafka quickstart guide](https://kafka.apache.org/quickstart) 
 
 
-### Data Loading
+## Data Loading
 It assumes the single-node hadoop server container is all setup and started running.
 
-#### mapr
+### mapr
 
 Running the map reduce.
 ```
@@ -195,7 +195,7 @@ hadoop jar MapReduceV1.jar main.program /data/input/European_Rosters.csv /data/o
 ```
 
 
-#### hive
+### hive
 
 Loading data from csv files into hive. Inside hive's console. It assumes the hive enviroment has been well created as told above in the setting up the enviroment section.
 The map reduce has to be run for the last command to work.
@@ -229,7 +229,7 @@ Insert the player data to its final table, filtering all the unnecesary columns 
 
 ```
 
-### Restarting container
+## Restarting container
 
 Everytime you rerun the preexisting hadoopserver container you must run the `./start.sh` command.
 
