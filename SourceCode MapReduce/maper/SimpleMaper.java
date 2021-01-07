@@ -30,6 +30,7 @@ public class SimpleMaper extends Mapper<Object, Text, Text, ValueHolder> {
             try {
                 String playerName = result[1];
                 String league =  result[3];
+                String team = result[2];
                 String citizenship =  result[9];
                 String nationality = result[26];
                 String highestMarketValueDate= "";
@@ -78,7 +79,7 @@ public class SimpleMaper extends Mapper<Object, Text, Text, ValueHolder> {
                 Text playerNameText = new Text(playerName);
                 //This is a way of passing multiple values with a single key, valueHolder is an object that implements the writable interface, with this method ,
                 //you can pass a class with multible atributes as a value
-                ValueHolder valueHolder = new ValueHolder(league,citizenship,nationality,highestMarketValueDate,marketValueInt,highestMarketValueInt);
+                ValueHolder valueHolder = new ValueHolder(league,citizenship,nationality,highestMarketValueDate,marketValueInt,highestMarketValueInt,team);
                 context.write(playerNameText,valueHolder);
             } catch (Exception var11) {
                 System.out.println(Arrays.toString(var11.getStackTrace()));
