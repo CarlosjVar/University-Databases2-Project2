@@ -163,7 +163,7 @@ LOCATION '/data';
 
 Create the players personal information final table. Set to load the data from the personal table `player_infoloader` filtering the unwanted fields.
 ```
-CREATE TABLE IF NOT EXISTS player(
+CREATE EXTERNAL TABLE IF NOT EXISTS player(
     player_api_id          INT,
     player_name            STRING,
     birthday               TIMESTAMP   
@@ -172,12 +172,13 @@ COMMENT 'Players personal info including market value data.'
 ROW FORMAT DELIMITED
 FIELDS TERMINATED BY ','
 LINES TERMINATED BY '\n'
-STORED AS TEXTFILE;
+STORED AS TEXTFILE
+LOCATION '/data';
 ```
 
 Create the players stats data final table. Set to load the data from the personal table `playerstats_infoloader` filtering the unwanted fields.
 ```
-CREATE TABLE IF NOT EXISTS playerstats(
+CREATE EXTERNAL TABLE IF NOT EXISTS playerstats(
     player_api_id       INT,
     dateRecorded        TIMESTAMP,
     overall_rating      INT,
@@ -188,7 +189,8 @@ COMMENT 'Players fifa overall ratings from 2006 to 2016.'
 ROW FORMAT DELIMITED
 FIELDS TERMINATED BY ','
 LINES TERMINATED BY '\n'
-STORED AS TEXTFILE;
+STORED AS TEXTFILE
+LOCATION '/data';
 ```
 
 ### kakfa
@@ -272,3 +274,13 @@ INSERT INTO TABLE player
 );
 ```
 
+### Get files from hdfs
+
+```
+//INSIDE DOCKER
+hadoop fs -get filelocation destination
+
+//IN VSCODE
+Use the extension to download the file that is inside the container
+
+```
