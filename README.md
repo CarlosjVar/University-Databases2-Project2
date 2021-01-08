@@ -143,7 +143,7 @@ FIELDS TERMINATED BY ',';
 
 Create the market values final table. Set to load the data from the temporal table `marketvalues_infoloader` so we can parse the `highestMarketValueDate` field to a TIMESTAMP.
 ```
-CREATE TABLE IF NOT EXISTS marketvalues(
+CREATE EXTERNAL TABLE IF NOT EXISTS marketvalues(
     player_name            STRING,
     player_league          STRING,
     player_citizenship     STRING,
@@ -157,7 +157,8 @@ COMMENT 'Market values info per player.'
 ROW FORMAT DELIMITED
 FIELDS TERMINATED BY ','
 LINES TERMINATED BY '\n'
-STORED AS TEXTFILE;
+STORED AS TEXTFILE
+LOCATION '/data';
 ```
 
 Create the players personal information final table. Set to load the data from the personal table `player_infoloader` filtering the unwanted fields.
