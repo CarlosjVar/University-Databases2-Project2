@@ -3,3 +3,7 @@ DataSources/soccer_database.sqlite
 
 mapRexample/.idea/
 mapRexample/src/
+
+DataMart/.RData
+
+DataMart/.Rhistory
