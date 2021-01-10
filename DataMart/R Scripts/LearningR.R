@@ -1,5 +1,5 @@
 setwd("C:\\Applications\\GitHub\\University-Databases2-Project2\\DataMart")
-
+setwd("D:\\Universidad\\University-Databases2-Project2\\DataMart")
 
 #install.packages("psych")
 #install.packages("dplyr")
@@ -57,26 +57,20 @@ player_stats <- setNames(player_stats,
 ### DATA PROCESSING
 ###
 
-head(player,n=4)
-tail(player,n=4)
-str(player)
-summary(player)
-describe(player)
-
-
 myfunc <- function(vec){
-  x=0
-  for (i in 1:(length(vec) - 1)) {
-    
+  sumatoria = 0
+  iteraciones = 0
+  promedio = 0
+  for (i in 2:(length(vec)-1)) {
+    iteraciones = iteraciones + 1
+    tasa = ((vec[i-1]-vec[i])/vec[i])*100
+    promedio = promedio + tasa
   }
-  
+  promedio = promedio/iteraciones
+  tasa
 }
   
 
-
-
-aggregate(player_info$V3,list(player_info$V1) ,FUN=sum)
-
-sumatory <- setNames(aggregate(player_stats$V3,list(player_stats$V1) ,FUN=sum),c("PlayerId", "Sumatory"))
+sumatory <- setNames(aggregate(player_stats$Overall,list(player_stats$PlayerId) ,FUN=function(data)myfunc(data)),c("PlayerId", "Sumatory"))
 
 str(sumatory)
