@@ -1,4 +1,4 @@
-setwd("D:\\Universidad\\University-Databases2-Project2\\DataMart")
+setwd("C:\\Applications\\GitHub\\University-Databases2-Project2\\DataMart")
 
 
 #install.packages("psych")
@@ -11,9 +11,51 @@ classes_marketvalues= c('V7'='Date')
 classes_player= c('V3'='Date')
 
 
-marketvalues <- read.csv("marketvalues.csv",header=FALSE,colClasses = classes_marketvalues ,stringsAsFactors = FALSE)
-player <- read.csv("player.csv",header=FALSE,colClasses =  classes_player,stringsAsFactors = FALSE)
-player_info <- read.csv("player_info.csv",header=FALSE,colClasses =  classes_player_info ,stringsAsFactors = FALSE)
+###
+### DATA LOADING
+###
+  
+
+marketvalues <- read.csv("marketvalues.csv",
+                         header=FALSE,colClasses = classes_marketvalues,
+                         stringsAsFactors = FALSE)
+
+marketvalues <- setNames(marketvalues,                  
+                         c("PlayerName",
+                           "League", 
+                           "Nationality", 
+                           "Citizenship", 
+                           "MarketValue", 
+                           "HighestMarketValue", 
+                           "HighestMarketValueDate", 
+                           "Team")
+)
+
+player <- read.csv("player.csv",
+                         header=FALSE,colClasses = classes_player,
+                         stringsAsFactors = FALSE)
+
+player <- setNames(player,                  
+                   c("PlayerId",
+                     "PlayerName",
+                     "BirthDate")
+                  )
+
+player_stats <- read.csv("player_stats.csv",
+                         header=FALSE,colClasses = classes_player_info,
+                         stringsAsFactors = FALSE)
+
+player_stats <- setNames(player_stats,                  
+                         c("PlayerId",
+                           "RecordedDate",
+                           "Overall",
+                           "Potential",
+                           "PreferredFoot") 
+                         )
+
+###
+### DATA PROCESSING
+###
 
 head(player,n=4)
 tail(player,n=4)
@@ -35,7 +77,6 @@ myfunc <- function(vec){
 
 aggregate(player_info$V3,list(player_info$V1) ,FUN=sum)
 
-print("pepito")
+sumatory <- setNames(aggregate(player_stats$V3,list(player_stats$V1) ,FUN=sum),c("PlayerId", "Sumatory"))
 
-
-
+str(sumatory)
