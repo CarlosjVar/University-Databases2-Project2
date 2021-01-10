@@ -161,7 +161,7 @@ STORED AS TEXTFILE
 LOCATION '/data';
 ```
 
-Create the players personal information final table. Set to load the data from the personal table `player_infoloader` filtering the unwanted fields.
+Create the players personal information final table. Set to load the data from the personal table `player_infoloader` filtering the unwanted fields. Created as an external table so we can later transfer the result outside of the
 ```
 CREATE EXTERNAL TABLE IF NOT EXISTS player(
     player_api_id          INT,
@@ -234,7 +234,8 @@ Insert the market values data to its final table, parsing the date to a Timestam
 INSERT INTO TABLE marketvalues 
 (
     SELECT 
-        player_name,player_league, 
+        player_name,
+        player_league, 
         player_citizenship, 
         player_nationality, 
         marketValue, 
@@ -243,6 +244,15 @@ INSERT INTO TABLE marketvalues
         player_team 
     FROM 
         marketvalues_infoloader
+    WHERE 
+        player_name IS NOT NULL AND
+        player_league IS NOT NULL AND
+        player_citizenship IS NOT NULL AND
+        player_nationality IS NOT NULL AND
+        marketValue IS NOT NULL AND
+        highestMarketValue IS NOT NULL AND
+        highestMarketValueDate IS NOT NULL AND
+        player_team IS NOT NULL
 );
 ```
 
@@ -256,8 +266,14 @@ INSERT INTO TABLE playerstats
         overall_rating,
         potential,           
         preferred_foot
-    FROM 
+    FROM
         playerstats_infoloader
+    WHERE
+        player_api_id IS NOT NULL AND
+        dateRecorded IS NOT NULL AND
+        overall_rating IS NOT NULL AND
+        potential IS NOT NULL AND
+        preferred_foot IS NOT NULL
 );
 ```
 
@@ -271,16 +287,18 @@ INSERT INTO TABLE player
         birthday
     FROM 
         player_infoloader
+    WHERE 
+        player_api_id IS NOT NULL AND
+        player_name IS NOT NULL AND
+        birthday IS NOT NULL
 );
 ```
 
-### Get files from hdfs
+Due to the final tables being external, there are files in de hadoop file system containing the data present in them, one per table.
+Stored in the path `/data/`.
 
-```
-//INSIDE DOCKER
-hadoop fs -get filelocation destination
+### hadoop
+ 
+To retrieve the datamart tables from the HDFS into our docker container, use `hadoop fs -get /data/<output file name> /home/hadoopuser/`.
 
-//IN VSCODE
-Use the extension to download the file that is inside the container
-
-```
+Then you can directly download each file into your local machine for further processing.
