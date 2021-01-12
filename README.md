@@ -256,7 +256,7 @@ INSERT INTO TABLE marketvalues
 );
 ```
 
-Insert the player stats data to its final table, filtering all the unnecesary columns in the process.
+Insert the player stats data to its final table, filtering all the unnecesary columns and all the unwanted rows in the process.
 ```
 INSERT INTO TABLE playerstats 
 (
