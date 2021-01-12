@@ -273,7 +273,15 @@ INSERT INTO TABLE playerstats
         dateRecorded IS NOT NULL AND
         overall_rating IS NOT NULL AND
         potential IS NOT NULL AND
-        preferred_foot IS NOT NULL
+        preferred_foot IS NOT NULL AND 
+        player_api_id IN (
+                            SELECT 
+                                stats.player_api_id
+                            FROM
+                                playerstats_infoloader as stats
+                            WHERE
+                                date_format(dateRecorded,'yyyy') = '2016'
+                         )
 );
 ```
 
