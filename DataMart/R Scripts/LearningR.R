@@ -83,7 +83,7 @@ myfunc <- function(vec){
     promedio = promedio + tasa
   }
   promedio = promedio/iteraciones
-  tasa
+  promedio
 }
   
 
@@ -95,7 +95,6 @@ str(sumatory)
 library(sqldf)
 x = sqldf("
   SELECT *
-  FROM Data1 d1 JOIN Data2 d2
-  ON d1.Hour = d2.Hour2
-  AND ABS(d1.Minute - d2.Minute2) <= 1
+  FROM sumatory crecimiento JOIN player players
+  ON crecimiento.PlayerId = players.PlayerId
 ")
