@@ -282,6 +282,7 @@ INSERT INTO TABLE playerstats
                             WHERE
                                 date_format(dateRecorded,'yyyy') = '2016'
                          )
+    ORDER BY (player_api_id,dateRecorded)
 );
 ```
 

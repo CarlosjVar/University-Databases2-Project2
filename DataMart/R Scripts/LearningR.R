@@ -3,7 +3,6 @@ setwd("D:\\Universidad\\University-Databases2-Project2\\DataMart")
 
 #install.packages("psych")
 #install.packages("dplyr")
-install.packages("tis")
 library("psych")
 library("dplyr")
 classes_player_info = c('V1'='integer','V2'='Date','V3'='integer','V4'='integer')
@@ -63,7 +62,7 @@ myfunc <- function(vec){
   promedio = 0
   for (i in 2:(length(vec)-1)) {
     iteraciones = iteraciones + 1
-    tasa = ((vec[i-1]-vec[i])/vec[i])*100
+    tasa = ((vec[i]-vec[i-1])/vec[i-1])*100
     promedio = promedio + tasa
   }
   promedio = promedio/iteraciones
@@ -71,6 +70,6 @@ myfunc <- function(vec){
 }
   
 
-sumatory <- setNames(aggregate(player_stats$Overall,list(player_stats$PlayerId) ,FUN=function(data)myfunc(data)),c("PlayerId", "Sumatory"))
+sumatory <- setNames(aggregate(player_stats$Overall,list(player_stats$PlayerId) ,FUN=function(data)myfunc(data)),c("PlayerId", "Growth Rate"))
 
 str(sumatory)
