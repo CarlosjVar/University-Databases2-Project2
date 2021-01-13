@@ -8,7 +8,7 @@ setwd("D:\\Universidad\\University-Databases2-Project2\\DataMart")
 ###
 #install.packages("psych")
 #install.packages("dplyr")
-#install.packages("sqldf")
+
 
 
 ###
@@ -16,7 +16,7 @@ setwd("D:\\Universidad\\University-Databases2-Project2\\DataMart")
 ###
 library("psych")
 library("dplyr")
-library("sqldf")
+
 
 
 ###
@@ -73,7 +73,8 @@ player_stats <- setNames(player_stats,
 ### DATA PROCESSING
 ###
 
-myfunc <- function(vec){
+#Function that gets a list with all the overall performances of a player an returns the growth value
+CalcGrowthRate <- function(vec){
   sumatoria = 0
   iteraciones = 0
   promedio = 0
@@ -86,17 +87,31 @@ myfunc <- function(vec){
   promedio
 }
   
+#Calculate the growth rate
+sumatory <- setNames(aggregate(player_stats$Overall,list(player_stats$PlayerId) ,FUN=function(data)CalcGrowthRate(data)),c("PlayerId","GrowthRate"))
+#Replace a list into a num
+sumatory$GrowthRate <- as.numeric(as.character(sumatory$GrowthRate))
 
-sumatory <- setNames(aggregate(player_stats$Overall,list(player_stats$PlayerId) ,FUN=function(data)myfunc(data)),c("PlayerId", "Growth Rate"))
+#Delete rows with null columns
+sumatory = na.omit(sumatory)
 
-str(sumatory)
-
-
-library(sqldf)
-x = sqldf("
-  SELECT *
-  FROM sumatory crecimiento JOIN player players
-  ON crecimiento.PlayerId = players.PlayerId
-")
-
+#Merge the new calculations with the player info
 final_player_stats = merge(sumatory,player,by = "PlayerId")
+
+#Get the latest overall performance and foot preference
+latestStats = player_stats %>% 
+  group_by(PlayerId) %>%
+  slice(which.max(RecordedDate))
+
+#Merge player info with their marketvalue
+playerANDvalues =  merge(final_player_stats,marketvalues,by = "PlayerName")
+
+#Merge the latest player info with the latest overall performance and foot preference
+FinalTable = merge(playerANDvalues,latestStats,by = "PlayerId")
+
+#Growth rate predictions to 2019
+FinalTable <- FinalTable %>% mutate(Overall2019 = Overall+GrowthRate*3)
+
+#2017 MarketValue estimations based on 2019 marketvalue, 2019 predicted performance and 2017 predicted peformance
+FinalTable <- FinalTable %>% mutate(MarketValue2017 = (MarketValue*(Overall+GrowthRate))/Overall2019)
+
