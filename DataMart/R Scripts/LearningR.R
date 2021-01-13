@@ -8,7 +8,7 @@ setwd("D:\\Universidad\\University-Databases2-Project2\\DataMart")
 ###
 #install.packages("psych")
 #install.packages("dplyr")
-#install.packages("sqldf")
+
 
 
 ###
@@ -16,7 +16,7 @@ setwd("D:\\Universidad\\University-Databases2-Project2\\DataMart")
 ###
 library("psych")
 library("dplyr")
-library("sqldf")
+
 
 
 ###
@@ -73,7 +73,7 @@ player_stats <- setNames(player_stats,
 ### DATA PROCESSING
 ###
 
-myfunc <- function(vec){
+calcGrowtRate <- function(vec){
   sumatoria = 0
   iteraciones = 0
   promedio = 0
@@ -84,19 +84,28 @@ myfunc <- function(vec){
   }
   promedio = promedio/iteraciones
   promedio
+
 }
   
 
-sumatory <- setNames(aggregate(player_stats$Overall,list(player_stats$PlayerId) ,FUN=function(data)myfunc(data)),c("PlayerId", "Growth Rate"))
+sumatory <- setNames(aggregate(player_stats$Overall,list(player_stats$PlayerId) ,FUN=function(data)calcGrowtRate(data)),c("PlayerId","GrowthRate"))
 
-str(sumatory)
-
-
-library(sqldf)
-x = sqldf("
-  SELECT *
-  FROM sumatory crecimiento JOIN player players
-  ON crecimiento.PlayerId = players.PlayerId
-")
+sumatory[,c(2)] <-    sapply(sumatory[,c(2)],as.numeric)
 
 final_player_stats = merge(sumatory,player,by = "PlayerId")
+
+
+latestStats = player_stats %>% 
+  group_by(PlayerId) %>%
+  slice(which.max(RecordedDate))
+
+playerANDvalues =  merge(final_player_stats,marketvalues,by = "PlayerName")
+
+FinalTable = merge(playerANDvalues,latestStats,by = "PlayerId")
+
+
+
+
+
+
+FinalTable <- FinalTable %>% mutate(Overall2019 = Overall+GrowthRate)
