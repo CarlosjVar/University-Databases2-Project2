@@ -98,3 +98,5 @@ x = sqldf("
   FROM sumatory crecimiento JOIN player players
   ON crecimiento.PlayerId = players.PlayerId
 ")
+
+final_player_stats = merge(sumatory,player,by = "PlayerId")
