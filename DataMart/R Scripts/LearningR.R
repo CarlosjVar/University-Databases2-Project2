@@ -1,10 +1,27 @@
 setwd("C:\\Applications\\GitHub\\University-Databases2-Project2\\DataMart")
 setwd("D:\\Universidad\\University-Databases2-Project2\\DataMart")
 
+
+
+###
+### REQUIRED PACKAGES
+###
 #install.packages("psych")
 #install.packages("dplyr")
+#install.packages("sqldf")
+
+
+###
+##USED LIBRARIES
+###
 library("psych")
 library("dplyr")
+library("sqldf")
+
+
+###
+### COLUMN CLASSES
+###
 classes_player_info = c('V1'='integer','V2'='Date','V3'='integer','V4'='integer')
 classes_marketvalues= c('V7'='Date')
 classes_player= c('V3'='Date')
@@ -73,3 +90,12 @@ myfunc <- function(vec){
 sumatory <- setNames(aggregate(player_stats$Overall,list(player_stats$PlayerId) ,FUN=function(data)myfunc(data)),c("PlayerId", "Growth Rate"))
 
 str(sumatory)
+
+
+library(sqldf)
+x = sqldf("
+  SELECT *
+  FROM Data1 d1 JOIN Data2 d2
+  ON d1.Hour = d2.Hour2
+  AND ABS(d1.Minute - d2.Minute2) <= 1
+")
