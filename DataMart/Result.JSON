@@ -1,0 +1,1416 @@
+{
+ "Team": [ "AC Milan", "TRUE", "AS Roma", "Atalanta", "Bologna", "Brescia", "Cagliari Calcio", "Chelsea", "FC Schalke 04", "Fiorentina", "Genoa", "Hellas Verona", "Inter", "Juventus", "Lazio", "Lecce", "Paris SG", "Parma", "Real Valladolid", "Sampdoria", "Sassuolo", "SC Freiburg", "SPAL", "SSC Napoli", "Stade Brest 29", "Torino", "Udinese Calcio", "Watford" ],
+"Players": [
+ [
+ {
+ "AC.Milan.PlayerName": [ "Giacomo Bonaventura" ],
+"AC.Milan.BirthDate": [     7173 ],
+"AC.Milan.League": [ "Serie A" ],
+"AC.Milan.Nationality": [ "Italy" ],
+"AC.Milan.MarketValue": [ 20000000 ],
+"AC.Milan.HighestMarketValue": [ 24000000 ],
+"AC.Milan.HighestMarketValueDate": [    17168 ],
+"AC.Milan.Team": [ "AC Milan" ],
+"AC.Milan.PreferredFoot": [ "right" ],
+"AC.Milan.MarketValue2017": [ 1.96287e+07 ] 
+},
+{
+ "AC.Milan.PlayerName": [ "Fabio Borini" ],
+"AC.Milan.BirthDate": [     7751 ],
+"AC.Milan.League": [ "Serie A" ],
+"AC.Milan.Nationality": [ "Italy" ],
+"AC.Milan.MarketValue": [ 7000000 ],
+"AC.Milan.HighestMarketValue": [ 12000000 ],
+"AC.Milan.HighestMarketValueDate": [    15592 ],
+"AC.Milan.Team": [ "AC Milan" ],
+"AC.Milan.PreferredFoot": [ "right" ],
+"AC.Milan.MarketValue2017": [  6936855 ] 
+},
+{
+ "AC.Milan.PlayerName": [ "Antonio Donnarumma" ],
+"AC.Milan.BirthDate": [     7492 ],
+"AC.Milan.League": [ "Serie A" ],
+"AC.Milan.Nationality": [ "Italy" ],
+"AC.Milan.MarketValue": [ 500000 ],
+"AC.Milan.HighestMarketValue": [ 800000 ],
+"AC.Milan.HighestMarketValueDate": [    15486 ],
+"AC.Milan.Team": [ "AC Milan" ],
+"AC.Milan.PreferredFoot": [ "right" ],
+"AC.Milan.MarketValue2017": [ 489295.4 ] 
+},
+{
+ "AC.Milan.PlayerName": [ "Alessio Romagnoli" ],
+"AC.Milan.BirthDate": [     9142 ],
+"AC.Milan.League": [ "Serie A" ],
+"AC.Milan.Nationality": [ "Italy" ],
+"AC.Milan.MarketValue": [ 50000000 ],
+"AC.Milan.HighestMarketValue": [ 50000000 ],
+"AC.Milan.HighestMarketValueDate": [    17956 ],
+"AC.Milan.Team": [ "AC Milan" ],
+"AC.Milan.PreferredFoot": [ "left" ],
+"AC.Milan.MarketValue2017": [ 4.934015e+07 ] 
+},
+{
+ "AC.Milan.PlayerName": [ "Andrea Conti" ],
+"AC.Milan.BirthDate": [     8826 ],
+"AC.Milan.League": [ "Serie A" ],
+"AC.Milan.Nationality": [ "Italy" ],
+"AC.Milan.MarketValue": [ 15000000 ],
+"AC.Milan.HighestMarketValue": [ 18000000 ],
+"AC.Milan.HighestMarketValueDate": [    17956 ],
+"AC.Milan.Team": [ "AC Milan" ],
+"AC.Milan.PreferredFoot": [ "right" ],
+"AC.Milan.MarketValue2017": [ 1.409565e+07 ] 
+},
+{
+ "AC.Milan.PlayerName": [ "Davide Calabria" ],
+"AC.Milan.BirthDate": [     9836 ],
+"AC.Milan.League": [ "Serie A" ],
+"AC.Milan.Nationality": [ "Italy" ],
+"AC.Milan.MarketValue": [ 18000000 ],
+"AC.Milan.HighestMarketValue": [ 20000000 ],
+"AC.Milan.HighestMarketValueDate": [    17956 ],
+"AC.Milan.Team": [ "AC Milan" ],
+"AC.Milan.PreferredFoot": [ "right" ],
+"AC.Milan.MarketValue2017": [ 1.729453e+07 ] 
+},
+{
+ "AC.Milan.PlayerName": [ "Gianluigi Donnarumma" ],
+"AC.Milan.BirthDate": [    10647 ],
+"AC.Milan.League": [ "Serie A" ],
+"AC.Milan.Nationality": [ "Italy" ],
+"AC.Milan.MarketValue": [ 55000000 ],
+"AC.Milan.HighestMarketValue": [ 55000000 ],
+"AC.Milan.HighestMarketValueDate": [    18053 ],
+"AC.Milan.Team": [ "AC Milan" ],
+"AC.Milan.PreferredFoot": [ "right" ],
+"AC.Milan.MarketValue2017": [ 5.395437e+07 ] 
+} 
+],
+true,
+[
+ {
+ "AS.Roma.PlayerName": [ "Antonio Mirante" ],
+"AS.Roma.BirthDate": [     4936 ],
+"AS.Roma.League": [ "Serie A" ],
+"AS.Roma.Nationality": [ "Italy" ],
+"AS.Roma.MarketValue": [ 800000 ],
+"AS.Roma.HighestMarketValue": [ 6000000 ],
+"AS.Roma.HighestMarketValueDate": [    16252 ],
+"AS.Roma.Team": [ "AS Roma" ],
+"AS.Roma.PreferredFoot": [ "right" ],
+"AS.Roma.MarketValue2017": [ 792635.9 ] 
+},
+{
+ "AS.Roma.PlayerName": [ "Davide Santon" ],
+"AS.Roma.BirthDate": [     7671 ],
+"AS.Roma.League": [ "Serie A" ],
+"AS.Roma.Nationality": [ "Italy" ],
+"AS.Roma.MarketValue": [ 5000000 ],
+"AS.Roma.HighestMarketValue": [ 10000000 ],
+"AS.Roma.HighestMarketValueDate": [    14823 ],
+"AS.Roma.Team": [ "AS Roma" ],
+"AS.Roma.PreferredFoot": [ "right" ],
+"AS.Roma.MarketValue2017": [  4889257 ] 
+},
+{
+ "AS.Roma.PlayerName": [ "Davide Zappacosta" ],
+"AS.Roma.BirthDate": [     8197 ],
+"AS.Roma.League": [ "Serie A" ],
+"AS.Roma.Nationality": [ "Italy" ],
+"AS.Roma.MarketValue": [ 15000000 ],
+"AS.Roma.HighestMarketValue": [ 20000000 ],
+"AS.Roma.HighestMarketValueDate": [    17533 ],
+"AS.Roma.Team": [ "AS Roma" ],
+"AS.Roma.PreferredFoot": [ "right" ],
+"AS.Roma.MarketValue2017": [ 1.454137e+07 ] 
+},
+{
+ "AS.Roma.PlayerName": [ "Alessandro Florenzi" ],
+"AS.Roma.BirthDate": [     7739 ],
+"AS.Roma.League": [ "Serie A" ],
+"AS.Roma.Nationality": [ "Italy" ],
+"AS.Roma.MarketValue": [ 25000000 ],
+"AS.Roma.HighestMarketValue": [ 30000000 ],
+"AS.Roma.HighestMarketValueDate": [    17689 ],
+"AS.Roma.Team": [ "AS Roma" ],
+"AS.Roma.PreferredFoot": [ "right" ],
+"AS.Roma.MarketValue2017": [ 2.449456e+07 ] 
+},
+{
+ "AS.Roma.PlayerName": [ "Bryan Cristante" ],
+"AS.Roma.BirthDate": [     9192 ],
+"AS.Roma.League": [ "Serie A" ],
+"AS.Roma.Nationality": [ "Italy" ],
+"AS.Roma.MarketValue": [ 25000000 ],
+"AS.Roma.HighestMarketValue": [ 25000000 ],
+"AS.Roma.HighestMarketValueDate": [    17689 ],
+"AS.Roma.Team": [ "AS Roma" ],
+"AS.Roma.PreferredFoot": [ "right" ],
+"AS.Roma.MarketValue2017": [ 2.461561e+07 ] 
+},
+{
+ "AS.Roma.PlayerName": [ "Lorenzo Pellegrini" ],
+"AS.Roma.BirthDate": [     9666 ],
+"AS.Roma.League": [ "Serie A" ],
+"AS.Roma.Nationality": [ "Italy" ],
+"AS.Roma.MarketValue": [ 40000000 ],
+"AS.Roma.HighestMarketValue": [ 40000000 ],
+"AS.Roma.HighestMarketValueDate": [    18177 ],
+"AS.Roma.Team": [ "AS Roma" ],
+"AS.Roma.PreferredFoot": [ "right" ],
+"AS.Roma.MarketValue2017": [ 3.874037e+07 ] 
+} 
+],
+[
+ {
+ "Atalanta.PlayerName": [ "Andrea Masiello" ],
+"Atalanta.BirthDate": [     5879 ],
+"Atalanta.League": [ "Serie A" ],
+"Atalanta.Nationality": [ "Italy" ],
+"Atalanta.MarketValue": [ 1000000 ],
+"Atalanta.HighestMarketValue": [ 5000000 ],
+"Atalanta.HighestMarketValueDate": [    14790 ],
+"Atalanta.Team": [ "Atalanta" ],
+"Atalanta.PreferredFoot": [ "right" ],
+"Atalanta.MarketValue2017": [ 978703.7 ] 
+},
+{
+ "Atalanta.PlayerName": [ "Marco Sportiello" ],
+"Atalanta.BirthDate": [     8165 ],
+"Atalanta.League": [ "Serie A" ],
+"Atalanta.Nationality": [ "Italy" ],
+"Atalanta.MarketValue": [ 4000000 ],
+"Atalanta.HighestMarketValue": [ 10000000 ],
+"Atalanta.HighestMarketValueDate": [    16997 ],
+"Atalanta.Team": [ "Atalanta" ],
+"Atalanta.PreferredFoot": [ "right" ],
+"Atalanta.MarketValue2017": [  3779382 ] 
+},
+{
+ "Atalanta.PlayerName": [ "Pierluigi Gollini" ],
+"Atalanta.BirthDate": [     9207 ],
+"Atalanta.League": [ "Serie A" ],
+"Atalanta.Nationality": [ "Italy" ],
+"Atalanta.MarketValue": [ 8000000 ],
+"Atalanta.HighestMarketValue": [ 8000000 ],
+"Atalanta.HighestMarketValueDate": [    18177 ],
+"Atalanta.Team": [ "Atalanta" ],
+"Atalanta.PreferredFoot": [ "right" ],
+"Atalanta.MarketValue2017": [  7520818 ] 
+} 
+],
+[
+ {
+ "Bologna.PlayerName": [ "Andrea Poli" ],
+"Bologna.BirthDate": [     7211 ],
+"Bologna.League": [ "Serie A" ],
+"Bologna.Nationality": [ "Italy" ],
+"Bologna.MarketValue": [ 3000000 ],
+"Bologna.HighestMarketValue": [ 10000000 ],
+"Bologna.HighestMarketValueDate": [    16252 ],
+"Bologna.Team": [ "Bologna" ],
+"Bologna.PreferredFoot": [ "right" ],
+"Bologna.MarketValue2017": [  2974906 ] 
+},
+{
+ "Bologna.PlayerName": [ "Mattia Destro" ],
+"Bologna.BirthDate": [     7748 ],
+"Bologna.League": [ "Serie A" ],
+"Bologna.Nationality": [ "Italy" ],
+"Bologna.MarketValue": [ 3500000 ],
+"Bologna.HighestMarketValue": [ 17000000 ],
+"Bologna.HighestMarketValueDate": [    16252 ],
+"Bologna.Team": [ "Bologna" ],
+"Bologna.PreferredFoot": [ "right" ],
+"Bologna.MarketValue2017": [  3456385 ] 
+},
+{
+ "Bologna.PlayerName": [ "Roberto Soriano" ],
+"Bologna.BirthDate": [     7708 ],
+"Bologna.League": [ "Serie A" ],
+"Bologna.Nationality": [ "Italy" ],
+"Bologna.MarketValue": [ 7000000 ],
+"Bologna.HighestMarketValue": [ 16000000 ],
+"Bologna.HighestMarketValueDate": [    17322 ],
+"Bologna.Team": [ "Bologna" ],
+"Bologna.PreferredFoot": [ "right" ],
+"Bologna.MarketValue2017": [  6871560 ] 
+},
+{
+ "Bologna.PlayerName": [ "Nicola Sansone" ],
+"Bologna.BirthDate": [     7922 ],
+"Bologna.League": [ "Serie A" ],
+"Bologna.Nationality": [ "Italy" ],
+"Bologna.MarketValue": [ 7500000 ],
+"Bologna.HighestMarketValue": [ 16000000 ],
+"Bologna.HighestMarketValueDate": [    17190 ],
+"Bologna.Team": [ "Bologna" ],
+"Bologna.PreferredFoot": [ "right" ],
+"Bologna.MarketValue2017": [  7293364 ] 
+} 
+],
+[
+ {
+ "Brescia.PlayerName": [ "Daniele Gastaldello" ],
+"Brescia.BirthDate": [     4923 ],
+"Brescia.League": [ "Serie A" ],
+"Brescia.Nationality": [ "Italy" ],
+"Brescia.MarketValue": [ 300000 ],
+"Brescia.HighestMarketValue": [ 5500000 ],
+"Brescia.HighestMarketValueDate": [    14984 ],
+"Brescia.Team": [ "Brescia" ],
+"Brescia.PreferredFoot": [ "right" ],
+"Brescia.MarketValue2017": [ 289637.2 ] 
+},
+{
+ "Brescia.PlayerName": [ "Daniele Dessena" ],
+"Brescia.BirthDate": [     6338 ],
+"Brescia.League": [ "Serie A" ],
+"Brescia.Nationality": [ "Italy" ],
+"Brescia.MarketValue": [ 500000 ],
+"Brescia.HighestMarketValue": [ 4000000 ],
+"Brescia.HighestMarketValueDate": [    13914 ],
+"Brescia.Team": [ "Brescia" ],
+"Brescia.PreferredFoot": [ "right" ],
+"Brescia.MarketValue2017": [ 492270.5 ] 
+},
+{
+ "Brescia.PlayerName": [ "Alessandro Matri" ],
+"Brescia.BirthDate": [     5344 ],
+"Brescia.League": [ "Serie A" ],
+"Brescia.Nationality": [ "Italy" ],
+"Brescia.MarketValue": [ 300000 ],
+"Brescia.HighestMarketValue": [ 16500000 ],
+"Brescia.HighestMarketValueDate": [    15146 ],
+"Brescia.Team": [ "Brescia" ],
+"Brescia.PreferredFoot": [ "right" ],
+"Brescia.MarketValue2017": [ 296506.2 ] 
+},
+{
+ "Brescia.PlayerName": [ "Mario Balotelli" ],
+"Brescia.BirthDate": [     7528 ],
+"Brescia.League": [ "Serie A" ],
+"Brescia.Nationality": [ "Italy" ],
+"Brescia.MarketValue": [ 20000000 ],
+"Brescia.HighestMarketValue": [ 32000000 ],
+"Brescia.HighestMarketValueDate": [    15515 ],
+"Brescia.Team": [ "Brescia" ],
+"Brescia.PreferredFoot": [ "right" ],
+"Brescia.MarketValue2017": [ 1.998284e+07 ] 
+},
+{
+ "Brescia.PlayerName": [ "Stefano Sabelli" ],
+"Brescia.BirthDate": [     8413 ],
+"Brescia.League": [ "Serie A" ],
+"Brescia.Nationality": [ "Italy" ],
+"Brescia.MarketValue": [ 1700000 ],
+"Brescia.HighestMarketValue": [ 1800000 ],
+"Brescia.HighestMarketValueDate": [    17154 ],
+"Brescia.Team": [ "Brescia" ],
+"Brescia.PreferredFoot": [ "right" ],
+"Brescia.MarketValue2017": [  1666077 ] 
+} 
+],
+[
+ {
+ "Cagliari.Calcio.PlayerName": [ "Fabrizio Cacciatore" ],
+"Cagliari.Calcio.BirthDate": [     6124 ],
+"Cagliari.Calcio.League": [ "Serie A" ],
+"Cagliari.Calcio.Nationality": [ "Italy" ],
+"Cagliari.Calcio.MarketValue": [ 800000 ],
+"Cagliari.Calcio.HighestMarketValue": [ 1900000 ],
+"Cagliari.Calcio.HighestMarketValueDate": [    16077 ],
+"Cagliari.Calcio.Team": [ "Cagliari Calcio" ],
+"Cagliari.Calcio.PreferredFoot": [ "right" ],
+"Cagliari.Calcio.MarketValue2017": [ 783913.4 ] 
+},
+{
+ "Cagliari.Calcio.PlayerName": [ "Luca Cigarini" ],
+"Cagliari.Calcio.BirthDate": [     6014 ],
+"Cagliari.Calcio.League": [ "Serie A" ],
+"Cagliari.Calcio.Nationality": [ "Italy" ],
+"Cagliari.Calcio.MarketValue": [ 800000 ],
+"Cagliari.Calcio.HighestMarketValue": [ 8000000 ],
+"Cagliari.Calcio.HighestMarketValueDate": [    14462 ],
+"Cagliari.Calcio.Team": [ "Cagliari Calcio" ],
+"Cagliari.Calcio.PreferredFoot": [ "right" ],
+"Cagliari.Calcio.MarketValue2017": [ 764221.7 ] 
+},
+{
+ "Cagliari.Calcio.PlayerName": [ "Luca Ceppitelli" ],
+"Cagliari.Calcio.BirthDate": [     7251 ],
+"Cagliari.Calcio.League": [ "Serie A" ],
+"Cagliari.Calcio.Nationality": [ "Italy" ],
+"Cagliari.Calcio.MarketValue": [ 2500000 ],
+"Cagliari.Calcio.HighestMarketValue": [ 2500000 ],
+"Cagliari.Calcio.HighestMarketValueDate": [    18053 ],
+"Cagliari.Calcio.Team": [ "Cagliari Calcio" ],
+"Cagliari.Calcio.PreferredFoot": [ "right" ],
+"Cagliari.Calcio.MarketValue2017": [  2444161 ] 
+},
+{
+ "Cagliari.Calcio.PlayerName": [ "Leonardo Pavoletti" ],
+"Cagliari.Calcio.BirthDate": [     6904 ],
+"Cagliari.Calcio.League": [ "Serie A" ],
+"Cagliari.Calcio.Nationality": [ "Italy" ],
+"Cagliari.Calcio.MarketValue": [ 12000000 ],
+"Cagliari.Calcio.HighestMarketValue": [ 13000000 ],
+"Cagliari.Calcio.HighestMarketValueDate": [    17168 ],
+"Cagliari.Calcio.Team": [ "Cagliari Calcio" ],
+"Cagliari.Calcio.PreferredFoot": [ "right" ],
+"Cagliari.Calcio.MarketValue2017": [ 1.178718e+07 ] 
+},
+{
+ "Cagliari.Calcio.PlayerName": [ "Alessio Cragno" ],
+"Cagliari.Calcio.BirthDate": [     8944 ],
+"Cagliari.Calcio.League": [ "Serie A" ],
+"Cagliari.Calcio.Nationality": [ "Italy" ],
+"Cagliari.Calcio.MarketValue": [ 20000000 ],
+"Cagliari.Calcio.HighestMarketValue": [ 20000000 ],
+"Cagliari.Calcio.HighestMarketValueDate": [    18053 ],
+"Cagliari.Calcio.Team": [ "Cagliari Calcio" ],
+"Cagliari.Calcio.PreferredFoot": [ "right" ],
+"Cagliari.Calcio.MarketValue2017": [ 1.956027e+07 ] 
+},
+{
+ "Cagliari.Calcio.PlayerName": [ "Federico Mattiello" ],
+"Cagliari.Calcio.BirthDate": [     9325 ],
+"Cagliari.Calcio.League": [ "Serie A" ],
+"Cagliari.Calcio.Nationality": [ "Italy" ],
+"Cagliari.Calcio.MarketValue": [ 2500000 ],
+"Cagliari.Calcio.HighestMarketValue": [ 3000000 ],
+"Cagliari.Calcio.HighestMarketValueDate": [    17885 ],
+"Cagliari.Calcio.Team": [ "Cagliari Calcio" ],
+"Cagliari.Calcio.PreferredFoot": [ "left" ],
+"Cagliari.Calcio.MarketValue2017": [  2314621 ] 
+} 
+],
+[
+ {
+ "Chelsea.PlayerName": [ "Jorginho" ],
+"Chelsea.BirthDate": [     8023 ],
+"Chelsea.League": [ "Premier League" ],
+"Chelsea.Nationality": [ "Italy" ],
+"Chelsea.MarketValue": [ 65000000 ],
+"Chelsea.HighestMarketValue": [ 65000000 ],
+"Chelsea.HighestMarketValueDate": [    17884 ],
+"Chelsea.Team": [ "Chelsea" ],
+"Chelsea.PreferredFoot": [ "right" ],
+"Chelsea.MarketValue2017": [ 6.363342e+07 ] 
+} 
+],
+[
+ {
+ "FC.Schalke.04.PlayerName": [ "Daniel Caligiuri" ],
+"FC.Schalke.04.BirthDate": [     6588 ],
+"FC.Schalke.04.League": [ "Bundesliga" ],
+"FC.Schalke.04.Nationality": [ "Italy" ],
+"FC.Schalke.04.MarketValue": [ 6500000 ],
+"FC.Schalke.04.HighestMarketValue": [ 7500000 ],
+"FC.Schalke.04.HighestMarketValueDate": [    16617 ],
+"FC.Schalke.04.Team": [ "FC Schalke 04" ],
+"FC.Schalke.04.PreferredFoot": [ "right" ],
+"FC.Schalke.04.MarketValue2017": [  6389664 ] 
+} 
+],
+[
+ {
+ "Fiorentina.PlayerName": [ "Federico Ceccherini" ],
+"Fiorentina.BirthDate": [     8166 ],
+"Fiorentina.League": [ "Serie A" ],
+"Fiorentina.Nationality": [ "Italy" ],
+"Fiorentina.MarketValue": [ 3500000 ],
+"Fiorentina.HighestMarketValue": [ 3500000 ],
+"Fiorentina.HighestMarketValueDate": [    18053 ],
+"Fiorentina.Team": [ "Fiorentina" ],
+"Fiorentina.PreferredFoot": [ "right" ],
+"Fiorentina.MarketValue2017": [  3273660 ] 
+},
+{
+ "Fiorentina.PlayerName": [ "Marco Benassi" ],
+"Fiorentina.BirthDate": [     8890 ],
+"Fiorentina.League": [ "Serie A" ],
+"Fiorentina.Nationality": [ "Italy" ],
+"Fiorentina.MarketValue": [ 18000000 ],
+"Fiorentina.HighestMarketValue": [ 20000000 ],
+"Fiorentina.HighestMarketValueDate": [    17885 ],
+"Fiorentina.Team": [ "Fiorentina" ],
+"Fiorentina.PreferredFoot": [ "right" ],
+"Fiorentina.MarketValue2017": [ 1.762872e+07 ] 
+} 
+],
+[
+ {
+ "Genoa.PlayerName": [ "Federico Marchetti" ],
+"Genoa.BirthDate": [     4785 ],
+"Genoa.League": [ "Serie A" ],
+"Genoa.Nationality": [ "Italy" ],
+"Genoa.MarketValue": [ 300000 ],
+"Genoa.HighestMarketValue": [ 13000000 ],
+"Genoa.HighestMarketValueDate": [    15875 ],
+"Genoa.Team": [ "Genoa" ],
+"Genoa.PreferredFoot": [ "left" ],
+"Genoa.MarketValue2017": [   293591 ] 
+},
+{
+ "Genoa.PlayerName": [ "Domenico Criscito" ],
+"Genoa.BirthDate": [     6207 ],
+"Genoa.League": [ "Serie A" ],
+"Genoa.Nationality": [ "Italy" ],
+"Genoa.MarketValue": [ 4000000 ],
+"Genoa.HighestMarketValue": [ 16000000 ],
+"Genoa.HighestMarketValueDate": [    15718 ],
+"Genoa.Team": [ "Genoa" ],
+"Genoa.PreferredFoot": [ "left" ],
+"Genoa.MarketValue2017": [  3927895 ] 
+},
+{
+ "Genoa.PlayerName": [ "Riccardo Saponara" ],
+"Genoa.BirthDate": [     8024 ],
+"Genoa.League": [ "Serie A" ],
+"Genoa.Nationality": [ "Italy" ],
+"Genoa.MarketValue": [ 4000000 ],
+"Genoa.HighestMarketValue": [ 15000000 ],
+"Genoa.HighestMarketValueDate": [    16804 ],
+"Genoa.Team": [ "Genoa" ],
+"Genoa.PreferredFoot": [ "right" ],
+"Genoa.MarketValue2017": [  3916871 ] 
+},
+{
+ "Genoa.PlayerName": [ "Stefano Sturaro" ],
+"Genoa.BirthDate": [     8468 ],
+"Genoa.League": [ "Serie A" ],
+"Genoa.Nationality": [ "Italy" ],
+"Genoa.MarketValue": [ 10000000 ],
+"Genoa.HighestMarketValue": [ 12000000 ],
+"Genoa.HighestMarketValueDate": [    16997 ],
+"Genoa.Team": [ "Genoa" ],
+"Genoa.PreferredFoot": [ "right" ],
+"Genoa.MarketValue2017": [  9771674 ] 
+},
+{
+ "Genoa.PlayerName": [ "Edoardo Goldaniga" ],
+"Genoa.BirthDate": [     8706 ],
+"Genoa.League": [ "Serie A" ],
+"Genoa.Nationality": [ "Italy" ],
+"Genoa.MarketValue": [ 2000000 ],
+"Genoa.HighestMarketValue": [ 3000000 ],
+"Genoa.HighestMarketValueDate": [    17529 ],
+"Genoa.Team": [ "Genoa" ],
+"Genoa.PreferredFoot": [ "right" ],
+"Genoa.MarketValue2017": [  1938448 ] 
+} 
+],
+[
+ {
+ "Hellas.Verona.PlayerName": [ "Giampaolo Pazzini" ],
+"Hellas.Verona.BirthDate": [     5327 ],
+"Hellas.Verona.League": [ "Serie A" ],
+"Hellas.Verona.Nationality": [ "Italy" ],
+"Hellas.Verona.MarketValue": [ 500000 ],
+"Hellas.Verona.HighestMarketValue": [ 21000000 ],
+"Hellas.Verona.HighestMarketValueDate": [    15146 ],
+"Hellas.Verona.Team": [ "Hellas Verona" ],
+"Hellas.Verona.PreferredFoot": [ "right" ],
+"Hellas.Verona.MarketValue2017": [ 501440.5 ] 
+},
+{
+ "Hellas.Verona.PlayerName": [ "Luigi Vitale" ],
+"Hellas.Verona.BirthDate": [     6486 ],
+"Hellas.Verona.League": [ "Serie A" ],
+"Hellas.Verona.Nationality": [ "Italy" ],
+"Hellas.Verona.MarketValue": [ 600000 ],
+"Hellas.Verona.HighestMarketValue": [ 2000000 ],
+"Hellas.Verona.HighestMarketValueDate": [    14278 ],
+"Hellas.Verona.Team": [ "Hellas Verona" ],
+"Hellas.Verona.PreferredFoot": [ "left" ],
+"Hellas.Verona.MarketValue2017": [ 581908.5 ] 
+},
+{
+ "Hellas.Verona.PlayerName": [ "Alessandro Crescenzi" ],
+"Hellas.Verona.BirthDate": [     7937 ],
+"Hellas.Verona.League": [ "Serie A" ],
+"Hellas.Verona.Nationality": [ "Italy" ],
+"Hellas.Verona.MarketValue": [ 700000 ],
+"Hellas.Verona.HighestMarketValue": [ 2200000 ],
+"Hellas.Verona.HighestMarketValueDate": [    16615 ],
+"Hellas.Verona.Team": [ "Hellas Verona" ],
+"Hellas.Verona.PreferredFoot": [ "right" ],
+"Hellas.Verona.MarketValue2017": [ 688560.9 ] 
+},
+{
+ "Hellas.Verona.PlayerName": [ "Marco Silvestri" ],
+"Hellas.Verona.BirthDate": [     7730 ],
+"Hellas.Verona.League": [ "Serie A" ],
+"Hellas.Verona.Nationality": [ "Italy" ],
+"Hellas.Verona.MarketValue": [ 800000 ],
+"Hellas.Verona.HighestMarketValue": [ 800000 ],
+"Hellas.Verona.HighestMarketValueDate": [    18052 ],
+"Hellas.Verona.Team": [ "Hellas Verona" ],
+"Hellas.Verona.PreferredFoot": [ "right" ],
+"Hellas.Verona.MarketValue2017": [ 773304.9 ] 
+},
+{
+ "Hellas.Verona.PlayerName": [ "Valerio Verre" ],
+"Hellas.Verona.BirthDate": [     8776 ],
+"Hellas.Verona.League": [ "Serie A" ],
+"Hellas.Verona.Nationality": [ "Italy" ],
+"Hellas.Verona.MarketValue": [ 3500000 ],
+"Hellas.Verona.HighestMarketValue": [ 4000000 ],
+"Hellas.Verona.HighestMarketValueDate": [    17088 ],
+"Hellas.Verona.Team": [ "Hellas Verona" ],
+"Hellas.Verona.PreferredFoot": [ "right" ],
+"Hellas.Verona.MarketValue2017": [  3395871 ] 
+},
+{
+ "Hellas.Verona.PlayerName": [ "Antonio Di Gaudio" ],
+"Hellas.Verona.BirthDate": [     7167 ],
+"Hellas.Verona.League": [ "Serie A" ],
+"Hellas.Verona.Nationality": [ "Italy" ],
+"Hellas.Verona.MarketValue": [ 1400000 ],
+"Hellas.Verona.HighestMarketValue": [ 2000000 ],
+"Hellas.Verona.HighestMarketValueDate": [    17154 ],
+"Hellas.Verona.Team": [ "Hellas Verona" ],
+"Hellas.Verona.PreferredFoot": [ "right" ],
+"Hellas.Verona.MarketValue2017": [  1330577 ] 
+} 
+],
+[
+ {
+ "Inter.PlayerName": [ "Antonio Candreva" ],
+"Inter.BirthDate": [     6267 ],
+"Inter.League": [ "Serie A" ],
+"Inter.Nationality": [ "Italy" ],
+"Inter.MarketValue": [ 7000000 ],
+"Inter.HighestMarketValue": [ 27000000 ],
+"Inter.HighestMarketValueDate": [    16617 ],
+"Inter.Team": [ "Inter" ],
+"Inter.PreferredFoot": [ "right" ],
+"Inter.MarketValue2017": [  6863858 ] 
+},
+{
+ "Inter.PlayerName": [ "Andrea Ranocchia" ],
+"Inter.BirthDate": [     6620 ],
+"Inter.League": [ "Serie A" ],
+"Inter.Nationality": [ "Italy" ],
+"Inter.MarketValue": [ 3000000 ],
+"Inter.HighestMarketValue": [ 18000000 ],
+"Inter.HighestMarketValueDate": [    15720 ],
+"Inter.Team": [ "Inter" ],
+"Inter.PreferredFoot": [ "right" ],
+"Inter.MarketValue2017": [  2968449 ] 
+},
+{
+ "Inter.PlayerName": [ "Daniele Padelli" ],
+"Inter.BirthDate": [     5776 ],
+"Inter.League": [ "Serie A" ],
+"Inter.Nationality": [ "Italy" ],
+"Inter.MarketValue": [ 800000 ],
+"Inter.HighestMarketValue": [ 2000000 ],
+"Inter.HighestMarketValueDate": [    16252 ],
+"Inter.Team": [ "Inter" ],
+"Inter.PreferredFoot": [ "left" ],
+"Inter.MarketValue2017": [ 773878.4 ] 
+},
+{
+ "Inter.PlayerName": [ "Danilo D'Ambrosio" ],
+"Inter.BirthDate": [     6826 ],
+"Inter.League": [ "Serie A" ],
+"Inter.Nationality": [ "Italy" ],
+"Inter.MarketValue": [ 13000000 ],
+"Inter.HighestMarketValue": [ 13000000 ],
+"Inter.HighestMarketValueDate": [    17529 ],
+"Inter.Team": [ "Inter" ],
+"Inter.PreferredFoot": [ "right" ],
+"Inter.MarketValue2017": [ 1.287801e+07 ] 
+},
+{
+ "Inter.PlayerName": [ "Matteo Politano" ],
+"Inter.BirthDate": [     8615 ],
+"Inter.League": [ "Serie A" ],
+"Inter.Nationality": [ "Italy" ],
+"Inter.MarketValue": [ 30000000 ],
+"Inter.HighestMarketValue": [ 30000000 ],
+"Inter.HighestMarketValueDate": [    17885 ],
+"Inter.Team": [ "Inter" ],
+"Inter.PreferredFoot": [ "left" ],
+"Inter.MarketValue2017": [ 2.95134e+07 ] 
+},
+{
+ "Inter.PlayerName": [ "Roberto Gagliardini" ],
+"Inter.BirthDate": [     8862 ],
+"Inter.League": [ "Serie A" ],
+"Inter.Nationality": [ "Italy" ],
+"Inter.MarketValue": [ 15000000 ],
+"Inter.HighestMarketValue": [ 20000000 ],
+"Inter.HighestMarketValueDate": [    17529 ],
+"Inter.Team": [ "Inter" ],
+"Inter.PreferredFoot": [ "right" ],
+"Inter.MarketValue2017": [  1.5e+07 ] 
+},
+{
+ "Inter.PlayerName": [ "Nicolo Barella" ],
+"Inter.BirthDate": [     9899 ],
+"Inter.League": [ "Serie A" ],
+"Inter.Nationality": [ "Italy" ],
+"Inter.MarketValue": [ 36000000 ],
+"Inter.HighestMarketValue": [ 36000000 ],
+"Inter.HighestMarketValueDate": [    18053 ],
+"Inter.Team": [ "Inter" ],
+"Inter.PreferredFoot": [ "right" ],
+"Inter.MarketValue2017": [ 3.506977e+07 ] 
+} 
+],
+[
+ {
+ "Juventus.PlayerName": [ "Leonardo Bonucci" ],
+"Juventus.BirthDate": [     6329 ],
+"Juventus.League": [ "Serie A" ],
+"Juventus.Nationality": [ "Italy" ],
+"Juventus.MarketValue": [ 28000000 ],
+"Juventus.HighestMarketValue": [ 45000000 ],
+"Juventus.HighestMarketValueDate": [    17325 ],
+"Juventus.Team": [ "Juventus" ],
+"Juventus.PreferredFoot": [ "right" ],
+"Juventus.MarketValue2017": [ 2.703779e+07 ] 
+},
+{
+ "Juventus.PlayerName": [ "Gianluigi Buffon" ],
+"Juventus.BirthDate": [     2949 ],
+"Juventus.League": [ "Serie A" ],
+"Juventus.Nationality": [ "Italy" ],
+"Juventus.MarketValue": [ 1000000 ],
+"Juventus.HighestMarketValue": [ 35000000 ],
+"Juventus.HighestMarketValueDate": [    12992 ],
+"Juventus.Team": [ "Juventus" ],
+"Juventus.PreferredFoot": [ "right" ],
+"Juventus.MarketValue2017": [  1008312 ] 
+},
+{
+ "Juventus.PlayerName": [ "Giorgio Chiellini" ],
+"Juventus.BirthDate": [     5339 ],
+"Juventus.League": [ "Serie A" ],
+"Juventus.Nationality": [ "Italy" ],
+"Juventus.MarketValue": [ 7500000 ],
+"Juventus.HighestMarketValue": [ 28500000 ],
+"Juventus.HighestMarketValueDate": [    15524 ],
+"Juventus.Team": [ "Juventus" ],
+"Juventus.PreferredFoot": [ "left" ],
+"Juventus.MarketValue2017": [  7441335 ] 
+},
+{
+ "Juventus.PlayerName": [ "Mattia Perin" ],
+"Juventus.BirthDate": [     8349 ],
+"Juventus.League": [ "Serie A" ],
+"Juventus.Nationality": [ "Italy" ],
+"Juventus.MarketValue": [ 10000000 ],
+"Juventus.HighestMarketValue": [ 18000000 ],
+"Juventus.HighestMarketValueDate": [    17168 ],
+"Juventus.Team": [ "Juventus" ],
+"Juventus.PreferredFoot": [ "right" ],
+"Juventus.MarketValue2017": [  9554287 ] 
+},
+{
+ "Juventus.PlayerName": [ "Mattia De Sciglio" ],
+"Juventus.BirthDate": [     8328 ],
+"Juventus.League": [ "Serie A" ],
+"Juventus.Nationality": [ "Italy" ],
+"Juventus.MarketValue": [ 14000000 ],
+"Juventus.HighestMarketValue": [ 14000000 ],
+"Juventus.HighestMarketValueDate": [    17689 ],
+"Juventus.Team": [ "Juventus" ],
+"Juventus.PreferredFoot": [ "right" ],
+"Juventus.MarketValue2017": [ 1.391318e+07 ] 
+},
+{
+ "Juventus.PlayerName": [ "Daniele Rugani" ],
+"Juventus.BirthDate": [     8975 ],
+"Juventus.League": [ "Serie A" ],
+"Juventus.Nationality": [ "Italy" ],
+"Juventus.MarketValue": [ 22000000 ],
+"Juventus.HighestMarketValue": [ 22000000 ],
+"Juventus.HighestMarketValueDate": [    17689 ],
+"Juventus.Team": [ "Juventus" ],
+"Juventus.PreferredFoot": [ "right" ],
+"Juventus.MarketValue2017": [ 2.163669e+07 ] 
+},
+{
+ "Juventus.PlayerName": [ "Federico Bernardeschi" ],
+"Juventus.BirthDate": [     8812 ],
+"Juventus.League": [ "Serie A" ],
+"Juventus.Nationality": [ "Italy" ],
+"Juventus.MarketValue": [ 45000000 ],
+"Juventus.HighestMarketValue": [ 45000000 ],
+"Juventus.HighestMarketValueDate": [    17816 ],
+"Juventus.Team": [ "Juventus" ],
+"Juventus.PreferredFoot": [ "left" ],
+"Juventus.MarketValue2017": [ 4.39378e+07 ] 
+} 
+],
+[
+ {
+ "Lazio.PlayerName": [ "Francesco Acerbi" ],
+"Lazio.BirthDate": [     6796 ],
+"Lazio.League": [ "Serie A" ],
+"Lazio.Nationality": [ "Italy" ],
+"Lazio.MarketValue": [ 12000000 ],
+"Lazio.HighestMarketValue": [ 12000000 ],
+"Lazio.HighestMarketValueDate": [    17325 ],
+"Lazio.Team": [ "Lazio" ],
+"Lazio.PreferredFoot": [ "left" ],
+"Lazio.MarketValue2017": [ 1.178007e+07 ] 
+},
+{
+ "Lazio.PlayerName": [ "Marco Parolo" ],
+"Lazio.BirthDate": [     5503 ],
+"Lazio.League": [ "Serie A" ],
+"Lazio.Nationality": [ "Italy" ],
+"Lazio.MarketValue": [ 3000000 ],
+"Lazio.HighestMarketValue": [ 8500000 ],
+"Lazio.HighestMarketValueDate": [    16617 ],
+"Lazio.Team": [ "Lazio" ],
+"Lazio.PreferredFoot": [ "right" ],
+"Lazio.MarketValue2017": [  2906678 ] 
+},
+{
+ "Lazio.PlayerName": [ "Ciro Immobile" ],
+"Lazio.BirthDate": [     7355 ],
+"Lazio.League": [ "Serie A" ],
+"Lazio.Nationality": [ "Italy" ],
+"Lazio.MarketValue": [ 40000000 ],
+"Lazio.HighestMarketValue": [ 50000000 ],
+"Lazio.HighestMarketValueDate": [    17689 ],
+"Lazio.Team": [ "Lazio" ],
+"Lazio.PreferredFoot": [ "right" ],
+"Lazio.MarketValue2017": [ 3.953289e+07 ] 
+},
+{
+ "Lazio.PlayerName": [ "Danilo Cataldi" ],
+"Lazio.BirthDate": [     8983 ],
+"Lazio.League": [ "Serie A" ],
+"Lazio.Nationality": [ "Italy" ],
+"Lazio.MarketValue": [ 4000000 ],
+"Lazio.HighestMarketValue": [ 7000000 ],
+"Lazio.HighestMarketValueDate": [    16617 ],
+"Lazio.Team": [ "Lazio" ],
+"Lazio.PreferredFoot": [ "right" ],
+"Lazio.MarketValue2017": [  3905342 ] 
+} 
+],
+[
+ {
+ "Lecce.PlayerName": [ "Luca Rossettini" ],
+"Lecce.BirthDate": [     5607 ],
+"Lecce.League": [ "Serie A" ],
+"Lecce.Nationality": [ "Italy" ],
+"Lecce.MarketValue": [ 500000 ],
+"Lecce.HighestMarketValue": [ 2500000 ],
+"Lecce.HighestMarketValueDate": [    17168 ],
+"Lecce.Team": [ "Lecce" ],
+"Lecce.PreferredFoot": [ "right" ],
+"Lecce.MarketValue2017": [ 497370.4 ] 
+},
+{
+ "Lecce.PlayerName": [ "Mauro Vigorito" ],
+"Lecce.BirthDate": [     7446 ],
+"Lecce.League": [ "Serie A" ],
+"Lecce.Nationality": [ "Italy" ],
+"Lecce.MarketValue": [ 600000 ],
+"Lecce.HighestMarketValue": [ 600000 ],
+"Lecce.HighestMarketValueDate": [    18052 ],
+"Lecce.Team": [ "Lecce" ],
+"Lecce.PreferredFoot": [ "right" ],
+"Lecce.MarketValue2017": [ 574287.9 ] 
+},
+{
+ "Lecce.PlayerName": [ "Andrea Rispoli" ],
+"Lecce.BirthDate": [     6602 ],
+"Lecce.League": [ "Serie A" ],
+"Lecce.Nationality": [ "Italy" ],
+"Lecce.MarketValue": [ 1000000 ],
+"Lecce.HighestMarketValue": [ 2000000 ],
+"Lecce.HighestMarketValueDate": [    17325 ],
+"Lecce.Team": [ "Lecce" ],
+"Lecce.PreferredFoot": [ "right" ],
+"Lecce.MarketValue2017": [ 991415.8 ] 
+},
+{
+ "Lecce.PlayerName": [ "Marco Calderoni" ],
+"Lecce.BirthDate": [     6988 ],
+"Lecce.League": [ "Serie A" ],
+"Lecce.Nationality": [ "Italy" ],
+"Lecce.MarketValue": [ 700000 ],
+"Lecce.HighestMarketValue": [ 800000 ],
+"Lecce.HighestMarketValueDate": [    14511 ],
+"Lecce.Team": [ "Lecce" ],
+"Lecce.PreferredFoot": [ "left" ],
+"Lecce.MarketValue2017": [ 681533.3 ] 
+},
+{
+ "Lecce.PlayerName": [ "Filippo Falco" ],
+"Lecce.BirthDate": [     8076 ],
+"Lecce.League": [ "Serie A" ],
+"Lecce.Nationality": [ "Italy" ],
+"Lecce.MarketValue": [ 4000000 ],
+"Lecce.HighestMarketValue": [ 4000000 ],
+"Lecce.HighestMarketValueDate": [    18177 ],
+"Lecce.Team": [ "Lecce" ],
+"Lecce.PreferredFoot": [ "left" ],
+"Lecce.MarketValue2017": [  3910187 ] 
+},
+{
+ "Lecce.PlayerName": [ "Riccardo Fiamozzi" ],
+"Lecce.BirthDate": [     8538 ],
+"Lecce.League": [ "Serie A" ],
+"Lecce.Nationality": [ "Italy" ],
+"Lecce.MarketValue": [ 700000 ],
+"Lecce.HighestMarketValue": [ 1000000 ],
+"Lecce.HighestMarketValueDate": [    16997 ],
+"Lecce.Team": [ "Lecce" ],
+"Lecce.PreferredFoot": [ "right" ],
+"Lecce.MarketValue2017": [ 679225.2 ] 
+} 
+],
+[
+ {
+ "Paris.SG.PlayerName": [ "Marco Verratti" ],
+"Paris.SG.BirthDate": [     8344 ],
+"Paris.SG.League": [ "Ligue 1" ],
+"Paris.SG.Nationality": [ "Italy" ],
+"Paris.SG.MarketValue": [ 75000000 ],
+"Paris.SG.HighestMarketValue": [ 75000000 ],
+"Paris.SG.HighestMarketValueDate": [    17962 ],
+"Paris.SG.Team": [ "Paris SG" ],
+"Paris.SG.PreferredFoot": [ "right" ],
+"Paris.SG.MarketValue2017": [ 7.194307e+07 ] 
+} 
+],
+[
+ {
+ "Parma.PlayerName": [ "Matteo Darmian" ],
+"Parma.BirthDate": [     7275 ],
+"Parma.League": [ "Serie A" ],
+"Parma.Nationality": [ "Italy" ],
+"Parma.MarketValue": [ 10000000 ],
+"Parma.HighestMarketValue": [ 15000000 ],
+"Parma.HighestMarketValueDate": [    16722 ],
+"Parma.Team": [ "Parma" ],
+"Parma.PreferredFoot": [ "right" ],
+"Parma.MarketValue2017": [  9824919 ] 
+},
+{
+ "Parma.PlayerName": [ "Luca Siligardi" ],
+"Parma.BirthDate": [     6599 ],
+"Parma.League": [ "Serie A" ],
+"Parma.Nationality": [ "Italy" ],
+"Parma.MarketValue": [ 800000 ],
+"Parma.HighestMarketValue": [ 3000000 ],
+"Parma.HighestMarketValueDate": [    15881 ],
+"Parma.Team": [ "Parma" ],
+"Parma.PreferredFoot": [ "left" ],
+"Parma.MarketValue2017": [ 789999.9 ] 
+},
+{
+ "Parma.PlayerName": [ "Simone Colombi" ],
+"Parma.BirthDate": [     7851 ],
+"Parma.League": [ "Serie A" ],
+"Parma.Nationality": [ "Italy" ],
+"Parma.MarketValue": [ 800000 ],
+"Parma.HighestMarketValue": [ 1500000 ],
+"Parma.HighestMarketValueDate": [    16252 ],
+"Parma.Team": [ "Parma" ],
+"Parma.PreferredFoot": [ "right" ],
+"Parma.MarketValue2017": [ 784520.7 ] 
+},
+{
+ "Parma.PlayerName": [ "Luigi Sepe" ],
+"Parma.BirthDate": [     7797 ],
+"Parma.League": [ "Serie A" ],
+"Parma.Nationality": [ "Italy" ],
+"Parma.MarketValue": [ 5000000 ],
+"Parma.HighestMarketValue": [ 5000000 ],
+"Parma.HighestMarketValueDate": [    18053 ],
+"Parma.Team": [ "Parma" ],
+"Parma.PreferredFoot": [ "left" ],
+"Parma.MarketValue2017": [  4829986 ] 
+},
+{
+ "Parma.PlayerName": [ "Roberto Inglese" ],
+"Parma.BirthDate": [     7985 ],
+"Parma.League": [ "Serie A" ],
+"Parma.Nationality": [ "Italy" ],
+"Parma.MarketValue": [ 15000000 ],
+"Parma.HighestMarketValue": [ 15000000 ],
+"Parma.HighestMarketValueDate": [    17956 ],
+"Parma.Team": [ "Parma" ],
+"Parma.PreferredFoot": [ "right" ],
+"Parma.MarketValue2017": [ 1.443812e+07 ] 
+},
+{
+ "Parma.PlayerName": [ "Alberto Grassi" ],
+"Parma.BirthDate": [     9196 ],
+"Parma.League": [ "Serie A" ],
+"Parma.Nationality": [ "Italy" ],
+"Parma.MarketValue": [ 7000000 ],
+"Parma.HighestMarketValue": [ 7000000 ],
+"Parma.HighestMarketValueDate": [    17689 ],
+"Parma.Team": [ "Parma" ],
+"Parma.PreferredFoot": [ "right" ],
+"Parma.MarketValue2017": [  6790931 ] 
+},
+{
+ "Parma.PlayerName": [ "Fabrizio Alastra" ],
+"Parma.BirthDate": [    10135 ],
+"Parma.League": [ "Serie A" ],
+"Parma.Nationality": [ "Italy" ],
+"Parma.MarketValue": [ 300000 ],
+"Parma.HighestMarketValue": [ 500000 ],
+"Parma.HighestMarketValueDate": [    16997 ],
+"Parma.Team": [ "Parma" ],
+"Parma.PreferredFoot": [ "right" ],
+"Parma.MarketValue2017": [   300000 ] 
+},
+{
+ "Parma.PlayerName": [ "Giuseppe Pezzella" ],
+"Parma.BirthDate": [    10194 ],
+"Parma.League": [ "Serie A" ],
+"Parma.Nationality": [ "Italy" ],
+"Parma.MarketValue": [ 3000000 ],
+"Parma.HighestMarketValue": [ 3000000 ],
+"Parma.HighestMarketValueDate": [    17689 ],
+"Parma.Team": [ "Parma" ],
+"Parma.PreferredFoot": [ "left" ],
+"Parma.MarketValue2017": [  2887640 ] 
+} 
+],
+[
+ {
+ "Real.Valladolid.PlayerName": [ "Federico Barba" ],
+"Real.Valladolid.BirthDate": [     8644 ],
+"Real.Valladolid.League": [ "LaLiga" ],
+"Real.Valladolid.Nationality": [ "Italy" ],
+"Real.Valladolid.MarketValue": [ 2000000 ],
+"Real.Valladolid.HighestMarketValue": [ 2000000 ],
+"Real.Valladolid.HighestMarketValueDate": [    16617 ],
+"Real.Valladolid.Team": [ "Real Valladolid" ],
+"Real.Valladolid.PreferredFoot": [ "left" ],
+"Real.Valladolid.MarketValue2017": [  1929262 ] 
+} 
+],
+[
+ {
+ "Sampdoria.PlayerName": [ "Fabio Quagliarella" ],
+"Sampdoria.BirthDate": [     4778 ],
+"Sampdoria.League": [ "Serie A" ],
+"Sampdoria.Nationality": [ "Italy" ],
+"Sampdoria.MarketValue": [ 2500000 ],
+"Sampdoria.HighestMarketValue": [ 17500000 ],
+"Sampdoria.HighestMarketValueDate": [    14994 ],
+"Sampdoria.Team": [ "Sampdoria" ],
+"Sampdoria.PreferredFoot": [ "right" ],
+"Sampdoria.MarketValue2017": [  2464808 ] 
+},
+{
+ "Sampdoria.PlayerName": [ "Andrea Bertolacci" ],
+"Sampdoria.BirthDate": [     7680 ],
+"Sampdoria.League": [ "Serie A" ],
+"Sampdoria.Nationality": [ "Italy" ],
+"Sampdoria.MarketValue": [ 3000000 ],
+"Sampdoria.HighestMarketValue": [ 15000000 ],
+"Sampdoria.HighestMarketValueDate": [    16617 ],
+"Sampdoria.Team": [ "Sampdoria" ],
+"Sampdoria.PreferredFoot": [ "left" ],
+"Sampdoria.MarketValue2017": [  2849132 ] 
+},
+{
+ "Sampdoria.PlayerName": [ "Vasco Regini" ],
+"Sampdoria.BirthDate": [     7556 ],
+"Sampdoria.League": [ "Serie A" ],
+"Sampdoria.Nationality": [ "Italy" ],
+"Sampdoria.MarketValue": [ 1400000 ],
+"Sampdoria.HighestMarketValue": [ 3500000 ],
+"Sampdoria.HighestMarketValueDate": [    16252 ],
+"Sampdoria.Team": [ "Sampdoria" ],
+"Sampdoria.PreferredFoot": [ "left" ],
+"Sampdoria.MarketValue2017": [  1361492 ] 
+},
+{
+ "Sampdoria.PlayerName": [ "Manolo Gabbiadini" ],
+"Sampdoria.BirthDate": [     7999 ],
+"Sampdoria.League": [ "Serie A" ],
+"Sampdoria.Nationality": [ "Italy" ],
+"Sampdoria.MarketValue": [ 12000000 ],
+"Sampdoria.HighestMarketValue": [ 18000000 ],
+"Sampdoria.HighestMarketValueDate": [    16617 ],
+"Sampdoria.Team": [ "Sampdoria" ],
+"Sampdoria.PreferredFoot": [ "left" ],
+"Sampdoria.MarketValue2017": [ 1.181038e+07 ] 
+},
+{
+ "Sampdoria.PlayerName": [ "Gianluca Caprari" ],
+"Sampdoria.BirthDate": [     8611 ],
+"Sampdoria.League": [ "Serie A" ],
+"Sampdoria.Nationality": [ "Italy" ],
+"Sampdoria.MarketValue": [ 10000000 ],
+"Sampdoria.HighestMarketValue": [ 10000000 ],
+"Sampdoria.HighestMarketValueDate": [    17816 ],
+"Sampdoria.Team": [ "Sampdoria" ],
+"Sampdoria.PreferredFoot": [ "right" ],
+"Sampdoria.MarketValue2017": [  9998034 ] 
+},
+{
+ "Sampdoria.PlayerName": [ "Alex Ferrari" ],
+"Sampdoria.BirthDate": [     8947 ],
+"Sampdoria.League": [ "Serie A" ],
+"Sampdoria.Nationality": [ "Italy" ],
+"Sampdoria.MarketValue": [ 1500000 ],
+"Sampdoria.HighestMarketValue": [ 1500000 ],
+"Sampdoria.HighestMarketValueDate": [    17529 ],
+"Sampdoria.Team": [ "Sampdoria" ],
+"Sampdoria.PreferredFoot": [ "right" ],
+"Sampdoria.MarketValue2017": [  1449436 ] 
+} 
+],
+[
+ {
+ "Sassuolo.PlayerName": [ "Andrea Consigli" ],
+"Sassuolo.BirthDate": [     6235 ],
+"Sassuolo.League": [ "Serie A" ],
+"Sassuolo.Nationality": [ "Italy" ],
+"Sassuolo.MarketValue": [ 4000000 ],
+"Sassuolo.HighestMarketValue": [ 8000000 ],
+"Sassuolo.HighestMarketValueDate": [    16252 ],
+"Sassuolo.Team": [ "Sassuolo" ],
+"Sassuolo.PreferredFoot": [ "right" ],
+"Sassuolo.MarketValue2017": [  3835299 ] 
+},
+{
+ "Sassuolo.PlayerName": [ "Federico Peluso" ],
+"Sassuolo.BirthDate": [     5132 ],
+"Sassuolo.League": [ "Serie A" ],
+"Sassuolo.Nationality": [ "Italy" ],
+"Sassuolo.MarketValue": [ 500000 ],
+"Sassuolo.HighestMarketValue": [ 5000000 ],
+"Sassuolo.HighestMarketValueDate": [    15720 ],
+"Sassuolo.Team": [ "Sassuolo" ],
+"Sassuolo.PreferredFoot": [ "left" ],
+"Sassuolo.MarketValue2017": [ 490917.5 ] 
+},
+{
+ "Sassuolo.PlayerName": [ "Francesco Magnanelli" ],
+"Sassuolo.BirthDate": [     5429 ],
+"Sassuolo.League": [ "Serie A" ],
+"Sassuolo.Nationality": [ "Italy" ],
+"Sassuolo.MarketValue": [ 800000 ],
+"Sassuolo.HighestMarketValue": [ 3000000 ],
+"Sassuolo.HighestMarketValueDate": [    16997 ],
+"Sassuolo.Team": [ "Sassuolo" ],
+"Sassuolo.PreferredFoot": [ "right" ],
+"Sassuolo.MarketValue2017": [ 777362.2 ] 
+},
+{
+ "Sassuolo.PlayerName": [ "Francesco Caputo" ],
+"Sassuolo.BirthDate": [     6426 ],
+"Sassuolo.League": [ "Serie A" ],
+"Sassuolo.Nationality": [ "Italy" ],
+"Sassuolo.MarketValue": [ 5000000 ],
+"Sassuolo.HighestMarketValue": [ 5000000 ],
+"Sassuolo.HighestMarketValueDate": [    18177 ],
+"Sassuolo.Team": [ "Sassuolo" ],
+"Sassuolo.PreferredFoot": [ "right" ],
+"Sassuolo.MarketValue2017": [  4805549 ] 
+},
+{
+ "Sassuolo.PlayerName": [ "Domenico Berardi" ],
+"Sassuolo.BirthDate": [     8978 ],
+"Sassuolo.League": [ "Serie A" ],
+"Sassuolo.Nationality": [ "Italy" ],
+"Sassuolo.MarketValue": [ 24000000 ],
+"Sassuolo.HighestMarketValue": [ 25000000 ],
+"Sassuolo.HighestMarketValueDate": [    17325 ],
+"Sassuolo.Team": [ "Sassuolo" ],
+"Sassuolo.PreferredFoot": [ "left" ],
+"Sassuolo.MarketValue2017": [ 2.339555e+07 ] 
+},
+{
+ "Sassuolo.PlayerName": [ "Leonardo Fontanesi" ],
+"Sassuolo.BirthDate": [     9546 ],
+"Sassuolo.League": [ "Serie A" ],
+"Sassuolo.Nationality": [ "Italy" ],
+"Sassuolo.MarketValue": [ 150000 ],
+"Sassuolo.HighestMarketValue": [ 300000 ],
+"Sassuolo.HighestMarketValueDate": [    16603 ],
+"Sassuolo.Team": [ "Sassuolo" ],
+"Sassuolo.PreferredFoot": [ "right" ],
+"Sassuolo.MarketValue2017": [ 149924.5 ] 
+} 
+],
+[
+ {
+ "SC.Freiburg.PlayerName": [ "Vincenzo Grifo" ],
+"SC.Freiburg.BirthDate": [     8497 ],
+"SC.Freiburg.League": [ "Bundesliga" ],
+"SC.Freiburg.Nationality": [ "Italy" ],
+"SC.Freiburg.MarketValue": [ 9000000 ],
+"SC.Freiburg.HighestMarketValue": [ 10000000 ],
+"SC.Freiburg.HighestMarketValueDate": [    17336 ],
+"SC.Freiburg.Team": [ "SC Freiburg" ],
+"SC.Freiburg.PreferredFoot": [ "right" ],
+"SC.Freiburg.MarketValue2017": [  8889776 ] 
+} 
+],
+[
+ {
+ "SPAL.PlayerName": [ "Sergio Floccari" ],
+"SPAL.BirthDate": [     4333 ],
+"SPAL.League": [ "Serie A" ],
+"SPAL.Nationality": [ "Italy" ],
+"SPAL.MarketValue": [ 300000 ],
+"SPAL.HighestMarketValue": [ 11000000 ],
+"SPAL.HighestMarketValueDate": [    14462 ],
+"SPAL.Team": [ "SPAL" ],
+"SPAL.PreferredFoot": [ "right" ],
+"SPAL.MarketValue2017": [ 299159.5 ] 
+},
+{
+ "SPAL.PlayerName": [ "Simone Missiroli" ],
+"SPAL.BirthDate": [     5986 ],
+"SPAL.League": [ "Serie A" ],
+"SPAL.Nationality": [ "Italy" ],
+"SPAL.MarketValue": [ 2000000 ],
+"SPAL.HighestMarketValue": [ 6000000 ],
+"SPAL.HighestMarketValueDate": [    16997 ],
+"SPAL.Team": [ "SPAL" ],
+"SPAL.PreferredFoot": [ "right" ],
+"SPAL.MarketValue2017": [  1977106 ] 
+},
+{
+ "SPAL.PlayerName": [ "Mirko Valdifiori" ],
+"SPAL.BirthDate": [     5954 ],
+"SPAL.League": [ "Serie A" ],
+"SPAL.Nationality": [ "Italy" ],
+"SPAL.MarketValue": [ 500000 ],
+"SPAL.HighestMarketValue": [ 6000000 ],
+"SPAL.HighestMarketValueDate": [    16514 ],
+"SPAL.Team": [ "SPAL" ],
+"SPAL.PreferredFoot": [ "right" ],
+"SPAL.MarketValue2017": [ 491544.2 ] 
+},
+{
+ "SPAL.PlayerName": [ "Alberto Paloschi" ],
+"SPAL.BirthDate": [     7308 ],
+"SPAL.League": [ "Serie A" ],
+"SPAL.Nationality": [ "Italy" ],
+"SPAL.MarketValue": [ 2000000 ],
+"SPAL.HighestMarketValue": [ 6000000 ],
+"SPAL.HighestMarketValueDate": [    16252 ],
+"SPAL.Team": [ "SPAL" ],
+"SPAL.PreferredFoot": [ "right" ],
+"SPAL.MarketValue2017": [  1991793 ] 
+},
+{
+ "SPAL.PlayerName": [ "Marco D'Alessandro" ],
+"SPAL.BirthDate": [     7717 ],
+"SPAL.League": [ "Serie A" ],
+"SPAL.Nationality": [ "Italy" ],
+"SPAL.MarketValue": [ 2000000 ],
+"SPAL.HighestMarketValue": [ 2500000 ],
+"SPAL.HighestMarketValueDate": [    16266 ],
+"SPAL.Team": [ "SPAL" ],
+"SPAL.PreferredFoot": [ "right" ],
+"SPAL.MarketValue2017": [  1990068 ] 
+},
+{
+ "SPAL.PlayerName": [ "Jacopo Sala" ],
+"SPAL.BirthDate": [     8008 ],
+"SPAL.League": [ "Serie A" ],
+"SPAL.Nationality": [ "Italy" ],
+"SPAL.MarketValue": [ 1600000 ],
+"SPAL.HighestMarketValue": [ 2500000 ],
+"SPAL.HighestMarketValueDate": [    16617 ],
+"SPAL.Team": [ "SPAL" ],
+"SPAL.PreferredFoot": [ "right" ],
+"SPAL.MarketValue2017": [  1570126 ] 
+},
+{
+ "SPAL.PlayerName": [ "Mattia Valoti" ],
+"SPAL.BirthDate": [     8649 ],
+"SPAL.League": [ "Serie A" ],
+"SPAL.Nationality": [ "Italy" ],
+"SPAL.MarketValue": [ 1000000 ],
+"SPAL.HighestMarketValue": [ 1000000 ],
+"SPAL.HighestMarketValueDate": [    17154 ],
+"SPAL.Team": [ "SPAL" ],
+"SPAL.PreferredFoot": [ "right" ],
+"SPAL.MarketValue2017": [ 981008.5 ] 
+},
+{
+ "SPAL.PlayerName": [ "Federico Di Francesco" ],
+"SPAL.BirthDate": [     8930 ],
+"SPAL.League": [ "Serie A" ],
+"SPAL.Nationality": [ "Italy" ],
+"SPAL.MarketValue": [ 4500000 ],
+"SPAL.HighestMarketValue": [ 5000000 ],
+"SPAL.HighestMarketValueDate": [    17816 ],
+"SPAL.Team": [ "SPAL" ],
+"SPAL.PreferredFoot": [ "right" ],
+"SPAL.MarketValue2017": [  4251913 ] 
+} 
+],
+[
+ {
+ "SSC.Napoli.PlayerName": [ "Lorenzo Insigne" ],
+"SSC.Napoli.BirthDate": [     7824 ],
+"SSC.Napoli.League": [ "Serie A" ],
+"SSC.Napoli.Nationality": [ "Italy" ],
+"SSC.Napoli.MarketValue": [ 65000000 ],
+"SSC.Napoli.HighestMarketValue": [ 75000000 ],
+"SSC.Napoli.HighestMarketValueDate": [    17885 ],
+"SSC.Napoli.Team": [ "SSC Napoli" ],
+"SSC.Napoli.PreferredFoot": [ "right" ],
+"SSC.Napoli.MarketValue2017": [ 6.382419e+07 ] 
+},
+{
+ "SSC.Napoli.PlayerName": [ "Lorenzo Tonelli" ],
+"SSC.Napoli.BirthDate": [     7321 ],
+"SSC.Napoli.League": [ "Serie A" ],
+"SSC.Napoli.Nationality": [ "Italy" ],
+"SSC.Napoli.MarketValue": [ 7000000 ],
+"SSC.Napoli.HighestMarketValue": [ 8500000 ],
+"SSC.Napoli.HighestMarketValueDate": [    16997 ],
+"SSC.Napoli.Team": [ "SSC Napoli" ],
+"SSC.Napoli.PreferredFoot": [ "right" ],
+"SSC.Napoli.MarketValue2017": [  6808746 ] 
+} 
+],
+[
+ {
+ "Stade.Brest.29.PlayerName": [ "Cristian Battocchio" ],
+"Stade.Brest.29.BirthDate": [     8075 ],
+"Stade.Brest.29.League": [ "Ligue 1" ],
+"Stade.Brest.29.Nationality": [ "Italy" ],
+"Stade.Brest.29.MarketValue": [ 1500000 ],
+"Stade.Brest.29.HighestMarketValue": [ 1750000 ],
+"Stade.Brest.29.HighestMarketValueDate": [    17332 ],
+"Stade.Brest.29.Team": [ "Stade Brest 29" ],
+"Stade.Brest.29.PreferredFoot": [ "right" ],
+"Stade.Brest.29.MarketValue2017": [  1459802 ] 
+} 
+],
+[
+ {
+ "Torino.PlayerName": [ "Lorenzo De Silvestri" ],
+"Torino.BirthDate": [     6717 ],
+"Torino.League": [ "Serie A" ],
+"Torino.Nationality": [ "Italy" ],
+"Torino.MarketValue": [ 4000000 ],
+"Torino.HighestMarketValue": [ 6000000 ],
+"Torino.HighestMarketValueDate": [    14809 ],
+"Torino.Team": [ "Torino" ],
+"Torino.PreferredFoot": [ "right" ],
+"Torino.MarketValue2017": [  3956361 ] 
+},
+{
+ "Torino.PlayerName": [ "Simone Zaza" ],
+"Torino.BirthDate": [     7845 ],
+"Torino.League": [ "Serie A" ],
+"Torino.Nationality": [ "Italy" ],
+"Torino.MarketValue": [ 10000000 ],
+"Torino.HighestMarketValue": [ 25000000 ],
+"Torino.HighestMarketValueDate": [    17532 ],
+"Torino.Team": [ "Torino" ],
+"Torino.PreferredFoot": [ "left" ],
+"Torino.MarketValue2017": [  9779929 ] 
+},
+{
+ "Torino.PlayerName": [ "Simone Verdi" ],
+"Torino.BirthDate": [     8228 ],
+"Torino.League": [ "Serie A" ],
+"Torino.Nationality": [ "Italy" ],
+"Torino.MarketValue": [ 23000000 ],
+"Torino.HighestMarketValue": [ 25000000 ],
+"Torino.HighestMarketValueDate": [    17689 ],
+"Torino.Team": [ "Torino" ],
+"Torino.PreferredFoot": [ "left" ],
+"Torino.MarketValue2017": [ 2.278911e+07 ] 
+},
+{
+ "Torino.PlayerName": [ "Daniele Baselli" ],
+"Torino.BirthDate": [     8117 ],
+"Torino.League": [ "Serie A" ],
+"Torino.Nationality": [ "Italy" ],
+"Torino.MarketValue": [ 10000000 ],
+"Torino.HighestMarketValue": [ 10000000 ],
+"Torino.HighestMarketValueDate": [    17689 ],
+"Torino.Team": [ "Torino" ],
+"Torino.PreferredFoot": [ "right" ],
+"Torino.MarketValue2017": [  9776796 ] 
+},
+{
+ "Torino.PlayerName": [ "Armando Izzo" ],
+"Torino.BirthDate": [     8096 ],
+"Torino.League": [ "Serie A" ],
+"Torino.Nationality": [ "Italy" ],
+"Torino.MarketValue": [ 20000000 ],
+"Torino.HighestMarketValue": [ 20000000 ],
+"Torino.HighestMarketValueDate": [    18053 ],
+"Torino.Team": [ "Torino" ],
+"Torino.PreferredFoot": [ "right" ],
+"Torino.MarketValue2017": [ 1.898857e+07 ] 
+},
+{
+ "Torino.PlayerName": [ "Andrea Belotti" ],
+"Torino.BirthDate": [     8754 ],
+"Torino.League": [ "Serie A" ],
+"Torino.Nationality": [ "Italy" ],
+"Torino.MarketValue": [ 35000000 ],
+"Torino.HighestMarketValue": [ 40000000 ],
+"Torino.HighestMarketValueDate": [    17529 ],
+"Torino.Team": [ "Torino" ],
+"Torino.PreferredFoot": [ "right" ],
+"Torino.MarketValue2017": [ 3.384511e+07 ] 
+} 
+],
+[
+ {
+ "Udinese.Calcio.PlayerName": [ "Kevin Lasagna" ],
+"Udinese.Calcio.BirthDate": [     8257 ],
+"Udinese.Calcio.League": [ "Serie A" ],
+"Udinese.Calcio.Nationality": [ "Italy" ],
+"Udinese.Calcio.MarketValue": [ 7500000 ],
+"Udinese.Calcio.HighestMarketValue": [ 8000000 ],
+"Udinese.Calcio.HighestMarketValueDate": [    17885 ],
+"Udinese.Calcio.Team": [ "Udinese Calcio" ],
+"Udinese.Calcio.PreferredFoot": [ "left" ],
+"Udinese.Calcio.MarketValue2017": [  7027528 ] 
+},
+{
+ "Udinese.Calcio.PlayerName": [ "Rolando Mandragora" ],
+"Udinese.Calcio.BirthDate": [    10041 ],
+"Udinese.Calcio.League": [ "Serie A" ],
+"Udinese.Calcio.Nationality": [ "Italy" ],
+"Udinese.Calcio.MarketValue": [ 15000000 ],
+"Udinese.Calcio.HighestMarketValue": [ 15000000 ],
+"Udinese.Calcio.HighestMarketValueDate": [    17816 ],
+"Udinese.Calcio.Team": [ "Udinese Calcio" ],
+"Udinese.Calcio.PreferredFoot": [ "left" ],
+"Udinese.Calcio.MarketValue2017": [ 1.432219e+07 ] 
+} 
+],
+[
+ {
+ "Watford.PlayerName": [ "Adam Masina" ],
+"Watford.BirthDate": [     8767 ],
+"Watford.League": [ "Premier League" ],
+"Watford.Nationality": [ "Italy" ],
+"Watford.MarketValue": [ 5000000 ],
+"Watford.HighestMarketValue": [ 7000000 ],
+"Watford.HighestMarketValueDate": [    17689 ],
+"Watford.Team": [ "Watford" ],
+"Watford.PreferredFoot": [ "left" ],
+"Watford.MarketValue2017": [  4668320 ] 
+} 
+] 
+] 
+}
