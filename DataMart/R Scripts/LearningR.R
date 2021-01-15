@@ -10,7 +10,7 @@ setwd("D:\\Universidad\\University-Databases2-Project2\\DataMart")
 #install.packages("dplyr")
 #install.packages("data.table")
 #install.packages("RJSONIO")  
-install.packages("rjson")
+#install.packages("rjson")
 
 ###
 ##USED LIBRARIES
@@ -161,7 +161,7 @@ for(i in 1:length(ByTeam))
   #print(c)
   columns = colnames(as.data.frame(players[1]))
   team= getElement((as.data.frame(players[1])),columns[8])
-  dt = data.table(Team=c(team), Players=c(list(players)))
+  dt = data.table(Name=c(team), children=c(list(players)))
   da <- rbind(da,dt,fill=TRUE)
 }
 
