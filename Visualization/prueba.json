@@ -1,0 +1,44 @@
+{
+    "name": "asd",
+    "children": [
+        {
+            "name": "pedro",
+            "children": [
+                {
+                    "name": "pedro",
+                    "precio": 150
+                },
+                {
+                    "name": "pepe",
+                    "precio": 130
+                }
+            ]
+        },
+        {
+            "name": "Juan",
+            "children": [
+                {
+                    "name": "Rodrigo",
+                    "precio": 150
+                },
+                {
+                    "name": "Fabrizio",
+                    "precio": 130
+                }
+            ]
+        },
+        {
+            "name": "Crystel",
+            "children": [
+                {
+                    "name": "Dafne",
+                    "precio": 150
+                },
+                {
+                    "name": "Paula",
+                    "precio": 130
+                }
+            ]
+        }
+    ]
+}
