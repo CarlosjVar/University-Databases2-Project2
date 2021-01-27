@@ -18,10 +18,7 @@ setwd("D:\\Universidad\\University-Databases2-Project2\\DataMart")
 library("psych")
 library("dplyr")
 library("jsonlite")
-library("RJSONIO")    
 library(data.table)
-library("rjson")
-library(jsonlite)
 
 
 ###
@@ -172,6 +169,6 @@ x <- toJSON(da)
 write(x, "test.json")
 
 L <- apply(da, 1, function(x) ((x)))
-writeLines(toJSON(da), "Result.JSON")
+writeLines(toJSON(da), "DataFinal1.JSON")
 
 

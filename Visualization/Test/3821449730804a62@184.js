@@ -1,7 +1,7 @@
-// https://observablehq.com/@d3/zoomable-circle-packing@165
+
 export default function define(runtime, observer) {
   const main = runtime.module();
-  const fileAttachments = new Map([["flare-2.json","https://static.observableusercontent.com/files/e65374209781891f37dea1e7a6e1c5e020a3009b8aedf113b4c80942018887a1176ad4945cf14444603ff91d3da371b3b0d72419fa8d2ee0f6e815732475d5de"]]);
+  const fileAttachments = new Map([["DataFinal.json",new URL("./files/cf3a98c197e8481367e2cab049eed1fcd6bf6d12e50a9ef06bdb2d0f2ba72179e38a71b8da6bc8632cc9dd47c23a9ce3544a2ff48c6a84ad8b3cac4fbfad47b9",import.meta.url)]]);
   main.builtin("FileAttachment", runtime.fileAttachments(name => fileAttachments.get(name)));
   main.variable(observer()).define(["md"], function(md){return(
 md`# Zoomable Circle Packing
@@ -11,6 +11,7 @@ Click to zoom in or out.`
   main.variable(observer("chart")).define("chart", ["pack","data","d3","width","height","color"], function(pack,data,d3,width,height,color)
 {
   const root = pack(data);
+  console.log("ola");
   let focus = root;
   let view;
 
@@ -26,8 +27,8 @@ Click to zoom in or out.`
     .selectAll("circle")
     .data(root.descendants().slice(1))
     .join("circle")
-      .attr("fill", d => d.children ? color(d.depth) : "white")
-      .attr("pointer-events", d => !d.children ? "none" : null)
+      .attr("fill", d => d.roberto ? color(d.depth) : "white")
+      .attr("pointer-events", d => !d.roberto ? "none" : null)
       .on("mouseover", function() { d3.select(this).attr("stroke", "#000"); })
       .on("mouseout", function() { d3.select(this).attr("stroke", null); })
       .on("click", (event, d) => focus !== d && (zoom(event, d), event.stopPropagation()));
@@ -41,7 +42,8 @@ Click to zoom in or out.`
     .join("text")
       .style("fill-opacity", d => d.parent === root ? 1 : 0)
       .style("display", d => d.parent === root ? "inline" : "none")
-      .text(d => d.data.name);
+      .text(d => d.data.Name);
+
 
   zoomTo([root.x, root.y, root.r * 2]);
 
@@ -73,21 +75,68 @@ Click to zoom in or out.`
         .style("fill-opacity", d => d.parent === focus ? 1 : 0)
         .on("start", function(d) { if (d.parent === focus) this.style.display = "inline"; })
         .on("end", function(d) { if (d.parent !== focus) this.style.display = "none"; });
+       
+    
+    
   }
 
   return svg.node();
 }
 );
-  main.variable(observer("data")).define("data", ["FileAttachment"], function(FileAttachment){return(
-FileAttachment("flare-2.json").json()
-)});
+
+// fs.readFile(require.resolve(path), (err, data) => {
+//   if (err)
+//     cb(err)
+//   else
+//     cb(null, JSON.parse(data))
+// })
+  main.variable(observer("data")).define("data", ["FileAttachment"], function(FileAttachment){
+
+
+
+    let data = FileAttachment("DataFinal.json").json()
+    return new Promise((resolve,reject)=>
+  {
+
+    data.then(data=>{
+      for(let i = 0;i<Object.keys(data).length;i++)
+      {
+        let equipo = data[i]
+        let jugadores = equipo.children;
+
+        for(let o = 0;o<Object.keys(jugadores).length;o++)
+        {
+          let fixedPlayer = jugadores[o][0];
+          data[i].children[o] = fixedPlayer
+        }
+      }
+      // console.log(equipos);
+      let result = {
+        "Name": "Root",
+        "children": data
+      }
+      console.log(result);
+      resolve(result)
+    }
+    )
+
+        
+  }  
+
+  )
+    
+
+  });
+
+
+
   main.variable(observer("pack")).define("pack", ["d3","width","height"], function(d3,width,height){return(
 data => d3.pack()
     .size([width, height])
     .padding(3)
   (d3.hierarchy(data)
-    .sum(d => d.value)
-    .sort((a, b) => b.value - a.value))
+    .sum(d => d.MarketValue2017)
+    .sort((a, b) => b.MarketValue2017 - a.MarketValue2017))
 )});
   main.variable(observer("width")).define("width", function(){return(
 932
