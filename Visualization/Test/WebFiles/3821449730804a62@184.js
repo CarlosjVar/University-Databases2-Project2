@@ -1,7 +1,6 @@
-
 export default function define(runtime, observer) {
   const main = runtime.module();
-  const fileAttachments = new Map([["DataFinal.json",new URL("./files/cf3a98c197e8481367e2cab049eed1fcd6bf6d12e50a9ef06bdb2d0f2ba72179e38a71b8da6bc8632cc9dd47c23a9ce3544a2ff48c6a84ad8b3cac4fbfad47b9",import.meta.url)]]);
+  const fileAttachments = new Map([["DataFinal@1.JSON",new URL("./files/jsonParsed",import.meta.url)]]);
   main.builtin("FileAttachment", runtime.fileAttachments(name => fileAttachments.get(name)));
   main.variable(observer()).define(["md"], function(md){return(
 md`# Zoomable Circle Packing
@@ -11,7 +10,6 @@ Click to zoom in or out.`
   main.variable(observer("chart")).define("chart", ["pack","data","d3","width","height","color"], function(pack,data,d3,width,height,color)
 {
   const root = pack(data);
-  console.log("ola");
   let focus = root;
   let view;
 
@@ -27,8 +25,8 @@ Click to zoom in or out.`
     .selectAll("circle")
     .data(root.descendants().slice(1))
     .join("circle")
-      .attr("fill", d => d.roberto ? color(d.depth) : "white")
-      .attr("pointer-events", d => !d.roberto ? "none" : null)
+      .attr("fill", d => d.children ? color(d.depth) : "white")
+      .attr("pointer-events", d => !d.children ? "none" : null)
       .on("mouseover", function() { d3.select(this).attr("stroke", "#000"); })
       .on("mouseout", function() { d3.select(this).attr("stroke", null); })
       .on("click", (event, d) => focus !== d && (zoom(event, d), event.stopPropagation()));
@@ -83,53 +81,9 @@ Click to zoom in or out.`
   return svg.node();
 }
 );
-
-// fs.readFile(require.resolve(path), (err, data) => {
-//   if (err)
-//     cb(err)
-//   else
-//     cb(null, JSON.parse(data))
-// })
-  main.variable(observer("data")).define("data", ["FileAttachment"], function(FileAttachment){
-
-
-
-    let data = FileAttachment("DataFinal.json").json()
-    return new Promise((resolve,reject)=>
-  {
-
-    data.then(data=>{
-      for(let i = 0;i<Object.keys(data).length;i++)
-      {
-        let equipo = data[i]
-        let jugadores = equipo.children;
-
-        for(let o = 0;o<Object.keys(jugadores).length;o++)
-        {
-          let fixedPlayer = jugadores[o][0];
-          data[i].children[o] = fixedPlayer
-        }
-      }
-      // console.log(equipos);
-      let result = {
-        "Name": "Root",
-        "children": data
-      }
-      console.log(result);
-      resolve(result)
-    }
-    )
-
-        
-  }  
-
-  )
-    
-
-  });
-
-
-
+  main.variable(observer("data")).define("data", ["FileAttachment"], function(FileAttachment){return(
+FileAttachment("DataFinal@1.JSON").json()
+)});
   main.variable(observer("pack")).define("pack", ["d3","width","height"], function(d3,width,height){return(
 data => d3.pack()
     .size([width, height])

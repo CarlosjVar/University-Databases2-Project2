@@ -124,10 +124,10 @@ FinalTable <- subset( FinalTable, select = -c(RecordedDate,PlayerId,GrowthRate,O
 ByTeam<-split(FinalTable, FinalTable$Team)
 
 
-da <- data.frame(matrix(ncol = 2, nrow = 0))
+dataTeam <- data.frame(matrix(ncol = 2, nrow = 0))
 x <- c("Team", "Players")
-colnames(da) <- x
-da <- rbind(da)
+colnames(dataTeam) <- x
+dataTeam <- rbind(dataTeam)
 
 changeColumnName <- function(vec){
   
@@ -158,17 +158,16 @@ for(i in 1:length(ByTeam))
   #print(c)
   columns = colnames(as.data.frame(players[1]))
   team= getElement((as.data.frame(players[1])),columns[8])
-  dt = data.table(Name=c(team), children=c(list(players)))
-  da <- rbind(da,dt,fill=TRUE)
+  dataplayer = data.table(Name=c(team), children=c(list(players)))
+  dataTeam <- rbind(dataTeam,dataplayer)
 }
 
-da = na.omit(da)
+dataTeam = na.omit(dataTeam)
 
 
-x <- toJSON(da)
+x <- toJSON(dataTeam)
 write(x, "test.json")
 
-L <- apply(da, 1, function(x) ((x)))
-writeLines(toJSON(da), "DataFinal1.JSON")
+
 
 
