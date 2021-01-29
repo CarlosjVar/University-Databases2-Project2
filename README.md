@@ -13,7 +13,7 @@ docker build . -t hadoop
 
 docker network create --driver bridge --subnet 10.0.0.0/28 littlenet
 
-docker run -it -p 9000:9000 -p 9092:9092 -p 22:22 -v [repository local path]\hadoop\dataLoading:/home/hadoopuser/mapr --name hadoopserver --net littlenet --ip 10.0.0.2 hadoop
+docker run -it -p 9000:9000 -p 9092:9092 -p 22:22 -p 10000:10000 -v [path to the repository in local pc]/University-DataBases2-Project2\hadoop\dataLoading:/home/hadoopuser/mapr --name hadoopserver --net littlenet --ip 10.0.0.2 hadoop
 ```
 
 ### ssh
@@ -160,6 +160,7 @@ LINES TERMINATED BY '\n'
 STORED AS TEXTFILE
 LOCATION '/data';
 ```
+
 
 Create the players personal information final table. Set to load the data from the personal table `player_infoloader` filtering the unwanted fields. Created as an external table so we can later transfer the result outside of the
 ```
