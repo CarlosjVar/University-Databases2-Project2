@@ -166,7 +166,7 @@ dataTeam = na.omit(dataTeam)
 
 
 x <- toJSON(dataTeam)
-write(x, "player_price.json")
+write(x, "./Results/player_price.json")
 
 
 
