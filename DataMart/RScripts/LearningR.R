@@ -8,15 +8,17 @@ setwd("D:\\Universidad\\University-Databases2-Project2\\DataMart")
 ###
 #install.packages("psych")
 #install.packages("dplyr")
-
-
+#install.packages("data.table")
+#install.packages("RJSONIO")  
+#install.packages("rjson")
 
 ###
 ##USED LIBRARIES
 ###
 library("psych")
 library("dplyr")
-
+library("jsonlite")
+library(data.table)
 
 
 ###
@@ -114,4 +116,58 @@ FinalTable <- FinalTable %>% mutate(Overall2019 = Overall+GrowthRate*3)
 
 #2017 MarketValue estimations based on 2019 marketvalue, 2019 predicted performance and 2017 predicted peformance
 FinalTable <- FinalTable %>% mutate(MarketValue2017 = (MarketValue*(Overall+GrowthRate))/Overall2019)
+
+#Removing useless columns
+FinalTable <- subset( FinalTable, select = -c(RecordedDate,PlayerId,GrowthRate,Overall,Potential,Citizenship,Overall2019 ) )
+
+#Organizing players by team
+ByTeam<-split(FinalTable, FinalTable$Team)
+
+
+dataTeam <- data.frame(matrix(ncol = 2, nrow = 0))
+x <- c("Team", "Players")
+colnames(dataTeam) <- x
+dataTeam <- rbind(dataTeam)
+
+changeColumnName <- function(vec){
+  
+
+  colnames(vec)<- c("Name","Birth","League","Nationality","MarketValue","HighestMarketValue","HighestMarketValueDate","Team","PreferredFoot","MarketValue2017")
+  vec
+  #print(vec)
+  
+}
+
+
+
+
+for(i in 1:length(ByTeam))
+{
+
+  
+  players <- lapply(as.list(1:dim((as.data.frame(ByTeam[i])))[1]), function(x) as.data.frame(ByTeam[i])[x[1],])
+  players <- lapply(players, function(x)changeColumnName(x) )
+  
+  # colo <- colnames(as.data.frame(players))
+  # 
+  # print(colo)
+  
+
+  #players2 <- lapply(players, function(x)changeColumnName(x) )
+  print(as.data.frame(players[1]))
+  #print(c)
+  columns = colnames(as.data.frame(players[1]))
+  team= getElement((as.data.frame(players[1])),columns[8])
+  dataplayer = data.table(Name=c(team), children=c(list(players)))
+  dataTeam <- rbind(dataTeam,dataplayer)
+}
+
+dataTeam = na.omit(dataTeam)
+
+
+x <- toJSON(dataTeam)
+write(x, "test.json")
+
+
+
 
