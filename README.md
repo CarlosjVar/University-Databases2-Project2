@@ -13,7 +13,7 @@ docker build . -t hadoop
 
 docker network create --driver bridge --subnet 10.0.0.0/28 littlenet
 
-docker run -it -p 9000:9000 -p 9092:9092 -p 22:22 -v [repository local path]\hadoop\dataLoading:/home/hadoopuser/mapr --name hadoopserver --net littlenet --ip 10.0.0.2 hadoop
+docker run -it -p 9000:9000 -p 9092:9092 -p 22:22 -p 10000:10000 -v C:\Applications\Github\University-Databases2-Project2\hadoop\dataLoading:/home/hadoopuser/mapr --name hadoopserver --net littlenet --ip 10.0.0.2 hadoop
 
 docker run -it -p 9000:9000 -p 9092:9092 -p 22:22 -p 10000:10000 -v D:\Universidad\University-Databases2-Project2\hadoop\dataLoading:/home/hadoopuser/mapr --name hadoopserver --net littlenet --ip 10.0.0.2 hadoop
 ```
@@ -228,7 +228,7 @@ The data from the three csv files is inserted into their corresponding temporal 
 ```
 load data inpath '/data/input/Player.csv' into table player_infoloader;
 load data inpath '/data/input/Player_Attributes.csv' into table playerstats_infoloader;
-load data inpath '/data/output/part-r-00000' into table marketvalues_infoloader; 
+load data inpath '/data/output/marketvalues.csv/part-r-00000' into table marketvalues_infoloader;
 ```
 
 Insert the market values data to its final table, parsing the date to a Timestamp in the process (it was provided as a string).
@@ -306,7 +306,7 @@ INSERT INTO TABLE player
 ```
 
 Due to the final tables being external, there are files in de hadoop file system containing the data present in them, one per table.
-Stored in the path `/data/`.
+Stored in the path `/data/<name_of_table>`.
 
 ### hadoop
  

@@ -6,19 +6,19 @@ setwd("D:\\Universidad\\University-Databases2-Project2\\DataMart")
 ###
 ### REQUIRED PACKAGES
 ###
-#install.packages("psych")
-#install.packages("dplyr")
-#install.packages("data.table")
-#install.packages("RJSONIO")  
-#install.packages("rjson")
-
+install.packages("psych")
+install.packages("dplyr")
+install.packages("data.table")
+install.packages("RJSONIO")  
+install.packages("rjson")
+install.packages("jsonlite")
 ###
 ##USED LIBRARIES
 ###
 library("psych")
 library("dplyr")
 library("jsonlite")
-library(data.table)
+library("data.table")
 
 
 ###
