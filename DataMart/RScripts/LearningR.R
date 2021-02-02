@@ -49,7 +49,7 @@ marketvalues <- setNames(marketvalues,
                            "Team")
 )
 
-player <- read.csv("player.csv",
+player <- read.csv("players.csv",
                          header=FALSE,colClasses = classes_player,
                          stringsAsFactors = FALSE)
 
@@ -166,7 +166,7 @@ dataTeam = na.omit(dataTeam)
 
 
 x <- toJSON(dataTeam)
-write(x, "test.json")
+write(x, "./Results/player_price.json")
 
 
 

@@ -13,7 +13,9 @@ docker build . -t hadoop
 
 docker network create --driver bridge --subnet 10.0.0.0/28 littlenet
 
-docker run -it -p 9000:9000 -p 9092:9092 -p 22:22 -p 10000:10000 -v [path to the repository in local pc]/University-DataBases2-Project2\hadoop\dataLoading:/home/hadoopuser/mapr --name hadoopserver --net littlenet --ip 10.0.0.2 hadoop
+docker run -it -p 9000:9000 -p 9092:9092 -p 22:22 -v [repository local path]\hadoop\dataLoading:/home/hadoopuser/mapr --name hadoopserver --net littlenet --ip 10.0.0.2 hadoop
+
+docker run -it -p 9000:9000 -p 9092:9092 -p 22:22 -p 10000:10000 -v D:\Universidad\University-Databases2-Project2\hadoop\dataLoading:/home/hadoopuser/mapr --name hadoopserver --net littlenet --ip 10.0.0.2 hadoop
 ```
 
 ### ssh
@@ -44,6 +46,14 @@ hadoop fs -copyFromLocal Player_Attributes.csv /data/input
 hadoop fs -copyFromLocal Player.csv /data/input
 cd ..
 cd ..
+```
+
+### mapr
+
+Running the map reduce.
+```
+cd mapr
+hadoop jar MapReduceV1.jar main.program /data/input/European_Rosters.csv /data/output/marketvalues.csv
 ```
 
 ### hive
@@ -158,9 +168,8 @@ ROW FORMAT DELIMITED
 FIELDS TERMINATED BY ','
 LINES TERMINATED BY '\n'
 STORED AS TEXTFILE
-LOCATION '/data';
+LOCATION '/data/marketvalues';
 ```
-
 
 Create the players personal information final table. Set to load the data from the personal table `player_infoloader` filtering the unwanted fields. Created as an external table so we can later transfer the result outside of the
 ```
@@ -174,7 +183,7 @@ ROW FORMAT DELIMITED
 FIELDS TERMINATED BY ','
 LINES TERMINATED BY '\n'
 STORED AS TEXTFILE
-LOCATION '/data';
+LOCATION '/data/players';
 ```
 
 Create the players stats data final table. Set to load the data from the personal table `playerstats_infoloader` filtering the unwanted fields.
@@ -191,7 +200,7 @@ ROW FORMAT DELIMITED
 FIELDS TERMINATED BY ','
 LINES TERMINATED BY '\n'
 STORED AS TEXTFILE
-LOCATION '/data';
+LOCATION '/data/player_stats';
 ```
 
 ### kakfa
@@ -207,14 +216,6 @@ Additionaly, remember to run `start-all.sh` to start the hadoop service.
 
 ## Data Loading
 It assumes the single-node hadoop server container is all setup and started running.
-
-### mapr
-
-Running the map reduce.
-```
-cd mapr
-hadoop jar MapReduceV1.jar main.program /data/input/European_Rosters.csv /data/output
-```
 
 
 ### hive
@@ -235,7 +236,7 @@ Insert the market values data to its final table, parsing the date to a Timestam
 INSERT INTO TABLE marketvalues 
 (
     SELECT 
-        player_name,
+        regexp_replace(player_name, '\\t', ''),
         player_league, 
         player_citizenship, 
         player_nationality, 
@@ -310,5 +311,9 @@ Stored in the path `/data/`.
 ### hadoop
  
 To retrieve the datamart tables from the HDFS into our docker container, use `hadoop fs -get /data/<output file name> /home/hadoopuser/`.
+
+hadoop fs -get /data/player_stats/000000_0 /home/hadoopuser/player_stats.csv
+hadoop fs -get /data/players/000000_0 /home/hadoopuser/players.csv
+hadoop fs -get /data/marketvalues/000000_0 /home/hadoopuser/marketvalues.csv
 
 Then you can directly download each file into your local machine for further processing.
